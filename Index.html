@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أبوابي الأربعة — التربية الإسلامية للأطفال</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800;900&family=Amiri:wght@400;700&display=swap');
+:root{--g1:#1B4332;--g2:#2D6A4F;--g3:#40916C;--g4:#52B788;--gl:#D8F3DC;--gxl:#F0FAF4;
+--gold:#C9A84C;--goldl:#FFF8E7;--dark:#1A1A2E;--grey:#6B7280;
+--blue:#1B3A6B;--bluea:#3A86FF;--bluel:#EBF3FF;
+--purple:#5B2D8E;--purplel:#F5F0FF;--red:#991B1B;--redl:#FFF0F0;
+--orange:#B45309;--orangel:#FFF7E6;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Tajawal','Amiri',sans-serif;background:#F0FAF4;color:var(--dark);line-height:1.8;}
+.top-nav{background:var(--g1);padding:0 14px;display:flex;align-items:center;justify-content:space-between;height:52px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.3);}
+.top-nav .logo{color:var(--gold);font-size:14px;font-weight:900;cursor:pointer;white-space:nowrap;}
+.top-nav .nlnks{display:flex;gap:5px;flex-wrap:wrap;}
+.top-nav .nlnks button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;padding:5px 11px;border-radius:16px;font-family:'Tajawal',sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;transition:all .2s;}
+.top-nav .nlnks button:hover,.top-nav .nlnks button.active{background:var(--gold);color:var(--g1);border-color:var(--gold);}
+.page{display:none;}.page.active{display:block;}
+.cont{max-width:880px;margin:0 auto;padding:20px 14px 60px;}
+.hero{background:linear-gradient(135deg,var(--g1) 0%,#2D6A4F 60%,#1a3d2e 100%);color:white;text-align:center;padding:50px 18px 42px;overflow:hidden;}
+.hero h1{font-size:clamp(28px,6vw,50px);font-weight:900;margin-bottom:8px;}
+.hero .sub{font-size:14px;opacity:.85;margin-bottom:16px;}
+.badge{display:inline-block;background:rgba(201,168,76,.2);border:1px solid rgba(201,168,76,.5);color:var(--gold);padding:4px 16px;border-radius:18px;font-size:12px;font-weight:700;letter-spacing:2px;margin-bottom:14px;}
+.hstats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.hstats span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:white;padding:4px 13px;border-radius:16px;font-size:12px;font-weight:600;}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px;margin-top:22px;}
+.dc{border-radius:20px;padding:24px 20px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;color:white;border:2px solid transparent;}
+.dc:hover{transform:translateY(-4px);}
+.dcbg{position:absolute;bottom:-8px;left:-8px;font-size:80px;opacity:.08;}
+.dc .dn{font-size:10px;letter-spacing:3px;font-weight:700;margin-bottom:4px;}
+.dc h3{font-size:21px;font-weight:900;margin-bottom:3px;}
+.dc .ds{font-size:12px;opacity:.8;margin-bottom:9px;}
+.dc .dd{font-size:11px;line-height:1.7;margin-bottom:11px;}
+.dages{display:flex;flex-wrap:wrap;gap:4px;}
+.dage{background:rgba(255,255,255,.15);border-radius:10px;padding:2px 9px;font-size:10px;font-weight:600;}
+.darr{margin-top:10px;font-size:11px;font-weight:700;opacity:.8;}
+.uh{border-radius:17px;padding:24px;margin-bottom:18px;text-align:center;position:relative;overflow:hidden;color:white;}
+.uh::before{content:attr(data-e);position:absolute;left:12px;top:8px;font-size:60px;opacity:.12;}
+.uh .un{font-size:10.5px;letter-spacing:3px;color:var(--gold);font-weight:700;margin-bottom:4px;}
+.uh h2{font-size:clamp(18px,4vw,26px);font-weight:900;margin-bottom:4px;}
+.uh .ua{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:3px 12px;border-radius:12px;font-size:11.5px;}
+.card{background:white;border-radius:14px;padding:18px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);}
+.ct{font-size:14px;font-weight:800;color:var(--g1);margin-bottom:10px;}
+.ip{font-size:13px;line-height:1.9;color:#374151;margin-bottom:10px;}
+.ayah{background:linear-gradient(135deg,#EEF7F2,#F5FBF7);border:2px solid var(--gold);border-radius:14px;padding:18px 15px;text-align:center;margin-bottom:14px;}
+.al{color:var(--gold);font-size:10.5px;font-weight:700;letter-spacing:2px;margin-bottom:6px;}
+.at{font-family:'Amiri',serif;font-size:clamp(15px,3.5vw,19px);color:var(--g1);line-height:2.1;margin-bottom:4px;}
+.as{color:var(--grey);font-size:11px;}
+.had{background:var(--gxl);border-right:5px solid var(--g3);border-radius:10px;padding:15px;margin-bottom:14px;}
+.hl{color:var(--g1);font-size:10.5px;font-weight:700;letter-spacing:1px;margin-bottom:4px;}
+.ht{font-family:'Amiri',serif;font-size:15px;color:var(--dark);line-height:1.9;margin-bottom:3px;}
+.hs{color:var(--grey);font-size:10.5px;}
+.stry{background:#FFF9F0;border:1px solid #F0D9A8;border-radius:14px;overflow:hidden;margin-bottom:14px;}
+.sh{background:linear-gradient(135deg,var(--gold),#B8860B);color:white;padding:11px 16px;font-size:13px;font-weight:800;}
+.sb{padding:15px;}
+.sb p{margin-bottom:7px;font-size:13px;line-height:1.9;color:#4A3728;}
+.actb{background:#F0F7FF;border:1px solid #BFD9FF;border-radius:14px;overflow:hidden;margin-bottom:14px;}
+.abh{background:linear-gradient(135deg,var(--blue),#2D5AA0);color:white;padding:11px 16px;font-size:13px;font-weight:800;}
+.abb{padding:15px;}
+.inp{width:100%;border:2px solid var(--gl);border-radius:8px;padding:9px 12px;font-family:'Tajawal',sans-serif;font-size:12.5px;color:var(--dark);background:var(--gxl);margin-top:5px;resize:vertical;min-height:44px;transition:border-color .2s;}
+.inp:focus{outline:none;border-color:var(--g3);}
+.ilbl{font-size:11.5px;font-weight:700;color:var(--grey);margin-bottom:2px;}
+.sbn{background:var(--goldl);border-radius:10px;padding:11px 15px;text-align:center;color:#92650A;font-weight:800;font-size:12.5px;margin-bottom:14px;}
+.snav{display:flex;gap:6px;padding:12px 0;flex-wrap:wrap;}
+.sbtn{padding:7px 14px;border-radius:16px;border:1.5px solid var(--gl);background:var(--gxl);color:var(--g1);cursor:pointer;font-family:'Tajawal',sans-serif;font-size:12px;font-weight:700;transition:all .2s;}
+.sbtn:hover,.sbtn.active{background:var(--g1);color:white;border-color:var(--g1);}
+.sc{display:none;}.sc.active{display:block;}
+.ws{display:flex;gap:11px;padding:11px;background:var(--gxl);border-radius:10px;margin-bottom:7px;border:1px solid var(--gl);cursor:pointer;transition:all .2s;}
+.ws:hover{transform:translateX(-2px);}
+.ws.done{background:#D8F3DC;border-color:var(--g3);}
+.wn{width:30px;height:30px;background:var(--g1);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0;}
+.ws.done .wn{background:var(--g3);}
+.wc h4{font-size:13px;font-weight:800;color:var(--g1);margin-bottom:2px;}
+.wc p{font-size:11.5px;color:var(--grey);}
+.wnt{font-size:10.5px;color:var(--g3);margin-top:2px;font-weight:600;}
+.sacc{background:white;border:2px solid var(--gl);border-radius:10px;margin-bottom:7px;cursor:pointer;overflow:hidden;}
+.sacc:hover{border-color:var(--g3);}
+.sah{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;}
+.sat{font-size:13px;font-weight:800;color:var(--g1);}
+.sai{color:var(--g3);font-size:14px;transition:transform .25s;}
+.sacc.open .sai{transform:rotate(180deg);}
+.sabd{display:none;padding:0 14px 12px;border-top:1px solid var(--gl);font-size:12px;color:#374151;line-height:1.8;padding-top:10px;}
+.sacc.open .sabd{display:block;}
+.ng{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:6px;}
+.nc{background:linear-gradient(135deg,var(--g1),var(--g2));color:white;border-radius:11px;padding:12px;text-align:center;cursor:pointer;transition:transform .2s;}
+.nc:hover{transform:translateY(-2px);}
+.na{font-family:'Amiri',serif;font-size:17px;margin-bottom:4px;}
+.nm{font-size:10px;opacity:.8;}
+.nwd{display:flex;gap:9px;padding:11px;background:var(--redl);border-radius:9px;border:1px solid #FECACA;margin-bottom:7px;}
+.nwn{width:24px;height:24px;background:#DC2626;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:10.5px;flex-shrink:0;}
+.nwd h4{font-size:12.5px;font-weight:800;color:var(--red);margin-bottom:2px;}
+.nwd p{font-size:11.5px;color:#7F1D1D;}
+.fr{display:grid;grid-template-columns:1fr 1.3fr;gap:0;border-bottom:1px solid var(--gl);padding:9px 0;}
+.fr:last-child{border-bottom:none;}
+.fa{font-family:'Amiri',serif;font-size:14px;color:var(--g1);line-height:1.9;}
+.fm{font-size:11.5px;color:#374151;border-right:3px solid var(--gl);padding-right:10px;display:flex;align-items:center;}
+.chi{display:flex;gap:11px;padding:12px;background:white;border:2px solid var(--gl);border-radius:11px;margin-bottom:8px;cursor:pointer;transition:all .25s;user-select:none;}
+.chi:hover{border-color:var(--g3);}
+.chi.ckd{background:var(--gxl);border-color:var(--g1);}
+.chb{width:24px;height:24px;border:2.5px solid var(--gl);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;font-size:13px;}
+.chi.ckd .chb{background:var(--g1);border-color:var(--g1);color:white;}
+.cht h4{font-size:12.5px;font-weight:800;color:var(--g1);margin-bottom:2px;}
+.cht p{font-size:11.5px;color:var(--grey);}
+.crt{background:var(--goldl);border:3px solid var(--gold);border-radius:16px;padding:24px;text-align:center;margin-top:20px;}
+.crt h3{font-size:16px;color:var(--gold);margin-bottom:12px;}
+.crf{border-bottom:2px dashed var(--gold);padding:6px;margin:8px 0;font-size:12.5px;color:var(--grey);min-height:34px;cursor:text;}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:11px;}
+.ib{border-radius:10px;padding:12px;text-align:center;}
+.mw{display:flex;gap:9px;padding:9px 11px;background:white;border-radius:8px;border:1px solid var(--gl);margin-bottom:6px;}
+.mn2{width:22px;height:22px;background:var(--g1);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex-shrink:0;}
+.mt{font-size:12.5px;color:var(--dark);line-height:1.7;}
+.wb{background:var(--orangel);border:1.5px solid #F59E0B;border-radius:10px;padding:12px 14px;margin-bottom:12px;font-size:12px;color:#78350F;}
+.bkbtn{display:inline-flex;align-items:center;gap:7px;background:white;border:1px solid var(--gl);color:var(--g1);padding:7px 15px;border-radius:10px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:12.5px;font-weight:700;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all .2s;}
+.bkbtn:hover{background:var(--g1);color:white;}
+table{width:100%;border-collapse:collapse;font-size:12.5px;}
+th{background:var(--g1);color:white;padding:8px 11px;}
+td{padding:8px 11px;}
+tr:nth-child(even){background:var(--gxl);}
+.d1{background:linear-gradient(145deg,#1B4332,#2D6A4F);border-color:#52B78844;}
+.d1:hover{border-color:#52B788;box-shadow:0 12px 36px #52B78844;}
+.d2{background:linear-gradient(145deg,#5B2D8E,#7B3FAE);border-color:#9333EA44;}
+.d2:hover{border-color:#9333EA;box-shadow:0 12px 36px #9333EA44;}
+.d3{background:linear-gradient(145deg,#B45309,#D97706);border-color:#F59E0B44;}
+.d3:hover{border-color:#F59E0B;box-shadow:0 12px 36px #F59E0B44;}
+.d4{background:linear-gradient(145deg,#0A3160,#1B4D8E);border-color:#3A86FF44;}
+.d4:hover{border-color:#3A86FF;box-shadow:0 12px 36px #3A86FF44;}
+.h1{background:linear-gradient(135deg,#1B4332,#2D6A4F);}
+.h2{background:linear-gradient(135deg,#5B2D8E,#7B3FAE);}
+.h3{background:linear-gradient(135deg,#B45309,#C2760A);}
+.h4{background:linear-gradient(135deg,#0A3160,#1B4D8E);}
+.ftb{background:var(--g1);color:white;text-align:center;padding:24px 18px;margin-top:32px;}
+.ftb .fq{font-family:'Amiri',serif;font-size:15px;color:var(--gold);margin-bottom:4px;}
+.ftb p{font-size:11px;opacity:.6;margin-top:4px;}
+@media(max-width:580px){.ng{grid-template-columns:1fr 1fr;}.fr{grid-template-columns:1fr;}.fm{border-right:none;border-top:2px solid var(--gl);padding-right:0;padding-top:6px;margin-top:3px;}.ig{grid-template-columns:1fr;}.top-nav .nlnks button{font-size:10.5px;padding:4px 8px;}}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="logo" onclick="goHome()">🌙 أبوابي الأربعة</div>
+  <div class="nlnks">
+    <button onclick="goHome()" id="nb0" class="active">🏠</button>
+    <button onclick="showDoor(1)" id="nb1">١ ربي</button>
+    <button onclick="showDoor(2)" id="nb2">٢ نفسي</button>
+    <button onclick="showDoor(3)" id="nb3">٣ والديّ</button>
+    <button onclick="showDoor(4)" id="nb4">٤ أصدقائي</button>
+  </div>
+</nav>
+<div class="page active" id="pg0">
+  <div class="hero">
+    <div class="badge">✦ برنامج تربوي إسلامي متكامل ✦</div>
+    <h1>أبوابي الأربعة 🌙</h1>
+    <div class="sub">دورة التربية الإسلامية للأطفال من سن ٤ إلى ١٤ عاماً — منهج أهل السنة والجماعة</div>
+    <div class="hstats"><span>🚪 ٤ أبواب</span><span>📚 ٢٠ وحدة</span><span>📖 قرآن وسنة</span><span>✋ أنشطة تفاعلية</span></div>
+  </div>
+  <div class="cont">
+    <div style="text-align:center;margin:10px 0 16px">
+      <div style="font-family:'Amiri',serif;font-size:17px;color:var(--g1)">﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</div>
+      <div style="font-size:11px;color:var(--grey);margin-top:3px">سورة الرعد، آية ٢٨</div>
+    </div>
+    <div class="dgrid">
+      <div class="dc d1" onclick="showDoor(1)"><div class="dcbg">🌙</div><div class="dn" style="color:#52B788">الباب الأول</div><h3>بابي مع ربي</h3><div class="ds">علاقتي بالله سبحانه وتعالى</div><div class="dd">من معرفة الله والأسماء الحسنى إلى الوضوء والصلاة والخشوع والمراقبة</div><div class="dages"><span class="dage">٤–٦</span><span class="dage">٧–١٠</span><span class="dage">١١–١٤</span></div><div class="darr">٥ وحدات ← افتح الباب</div></div>
+      <div class="dc d2" onclick="showDoor(2)"><div class="dcbg">⭐</div><div class="dn" style="color:#C77DFF">الباب الثاني</div><h3>بابي مع نفسي</h3><div class="ds">الثقة وصناعة المستقبل</div><div class="dd">شخصية واثقة تعرف مواهبها وتتخذ قراراتها وتضع أهدافها بتوكل على الله</div><div class="dages"><span class="dage">٦–٩</span><span class="dage">١٠–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+      <div class="dc d3" onclick="showDoor(3)"><div class="dcbg">🏠</div><div class="dn" style="color:#FCD34D">الباب الثالث</div><h3>بابي مع والديّ</h3><div class="ds">البر والامتنان والتواصل</div><div class="dd">قلوب ممتنة تعرف قدر الوالدين وتتواصل معهم باحترام وتحل الخلافات بحكمة</div><div class="dages"><span class="dage">٥–٨</span><span class="dage">٩–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+      <div class="dc d4" onclick="showDoor(4)"><div class="dcbg">🤝</div><div class="dn" style="color:#93C5FD">الباب الرابع</div><h3>بابي مع أصدقائي</h3><div class="ds">الاختيار الصحيح وحدود العلاقات</div><div class="dd">اختيار الأصحاب الصالحين وحماية النفس وضبط حدود العلاقات</div><div class="dages"><span class="dage">٦–٩</span><span class="dage">١٠–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+    </div>
+    <div style="background:white;border-radius:13px;padding:16px;margin-top:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.07);font-size:12.5px;color:var(--grey)">١ — اختر الباب &nbsp;•&nbsp; ٢ — اقرأ كل وحدة &nbsp;•&nbsp; ٣ — نفّذ الأنشطة &nbsp;•&nbsp; ٤ — أكمل التحديات الأسبوعية</div>
+  </div>
+</div>
+<div class="page" id="pg1">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h1" data-e="🌙"><div class="un">✦ الباب الأول ✦</div><h2>بابي مع ربي</h2><span class="ua">علاقتي بالله سبحانه وتعالى</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('1','a',this)">١ — من هو الله؟</button>
+    <button class="sbtn" onclick="S('1','b',this)">٢ — لماذا الأوامر؟</button>
+    <button class="sbtn" onclick="S('1','c',this)">٣ — الوضوء</button>
+    <button class="sbtn" onclick="S('1','d',this)">٤ — الصلاة</button>
+    <button class="sbtn" onclick="S('1','e',this)">٥ — الله يراني</button>
+    <button class="sbtn" onclick="S('1','f',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s1a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ﴾</div><div class="as">سورة الحديد، آية ٤</div></div>
+    <div class="card"><div class="ct">✨ تعلّم وتفكّر — من سن ٤ سنوات</div>
+      <p class="ip">الله سبحانه وتعالى هو خالق كل شيء — السماء والأرض والشمس والقمر والنجوم... وخلقك أنت!</p>
+      <p class="ip">والله لا يشبه أي شيء نراه. هو الأول الذي لم يخلقه أحد، والآخر الذي لا ينتهي.</p>
+      <div class="ayah" style="margin-bottom:0"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ لَيْسَ كَمِثْلِهِ شَيْءٌ ﴾</div><div class="as">سورة الشورى، آية ١١</div></div></div>
+    <div class="card"><div class="ct">🌸 أسماء الله الحسنى — اضغط على كل اسم</div>
+      <div class="ng">
+        <div class="nc" onclick="MN(this,'الله — اسمه الأعظم، لا يُسمّى به أحد سواه')"><div class="na">الله</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الرحمن الرحيم — رحمته واسعة تشمل كل خلقه')"><div class="na">الرحمن الرحيم</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الخالق — خلق كل شيء من العدم بكلمة «كن فيكون»')"><div class="na">الخالق</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'السميع — يسمعك حين تدعوه حتى لو همست في الظلام')"><div class="na">السميع</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'البصير — يراك في كل مكان حتى في الظلام الدامس')"><div class="na">البصير</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'القريب — أقرب إليك من حبل الوريد')"><div class="na">القريب</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الحكيم — كل ما يفعله له حكمة وإن لم نفهمها')"><div class="na">الحكيم</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الغفور — يغفر الذنوب كلها لمن تاب وأناب إليه')"><div class="na">الغفور</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الودود — يحب عباده المؤمنين ويفرح بتوبة التائب')"><div class="na">الودود</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الرزاق — يرزق كل مخلوق رزقه من الذرة إلى الفيل')"><div class="na">الرزاق</div><div class="nm">اضغط ↓</div></div>
+      </div>
+      <div id="mnd" style="display:none;margin-top:12px;padding:11px;background:var(--goldl);border-radius:9px;color:#92650A;font-weight:700;font-size:13.5px;text-align:center"></div>
+    </div>
+    <div class="stry"><div class="sh">📖 قصة البذرة الصغيرة 🌱</div>
+      <div class="sb">
+        <p>كانت هناك بذرة صغيرة جداً دفنها الفلاح في الأرض.</p>
+        <p>مرت الأيام... نزل المطر وأشرقت الشمس وحدث شيء عجيب! جذر ينزل وساق تصعد ثم أوراق خضراء وثمار لذيذة!</p>
+        <p><strong>فكّر: من جعل في البذرة هذا السر العجيب؟ من علّمها كيف تنمو؟</strong></p>
+        <p>هو الله الخالق الحكيم. 🌳</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ نشاطي: مخلوقات الله الجميلة</div>
+      <div class="abb">
+        <p style="font-size:12.5px;color:#374151;margin-bottom:9px">انظر من حولك — اكتب ٥ مخلوقات وقل بعد كل واحدة «سبحان الله»:</p>
+        <div id="cr1"></div>
+        <button onclick="AC('cr1')" style="padding:6px 14px;background:var(--blue);color:white;border:none;border-radius:7px;font-family:'Tajawal',sans-serif;font-weight:700;cursor:pointer;font-size:12px;margin-top:4px">+ أضف</button>
+        <div class="sbn" style="margin-top:11px">✦ بعد كل مخلوق قل: «سبحان الله» ✦</div>
+        <div class="ilbl">💬 من خلق النجوم؟</div>
+        <textarea class="inp" placeholder="اكتب إجابتك..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ ﴾</div><div class="as">سورة الأنبياء، آية ١٠٧</div></div>
+    <div class="card"><div class="ct">🧠 لماذا يأمر الله وينهى؟</div>
+      <p class="ip"><strong style="color:var(--g1)">الجواب: لأنه يحبنا!</strong> الله يعلم ما يضرنا وما ينفعنا. مثل الطبيب يقول «لا تأكل الحلوى الكثيرة» — لا يظلم بل يحمي! والله أعلم وأرحم من أي طبيب.</p>
+      <div class="ig">
+        <div class="ib" style="background:var(--gxl)"><div style="font-size:20px">💚</div><div style="font-size:12.5px;font-weight:800;color:var(--g1)">أوامر الله</div><div style="font-size:11px;color:var(--grey)">رحمة ونعمة</div></div>
+        <div class="ib" style="background:var(--redl)"><div style="font-size:20px">🛡️</div><div style="font-size:12.5px;font-weight:800;color:var(--red)">نواهي الله</div><div style="font-size:11px;color:var(--grey)">حماية وسلامة</div></div>
+      </div>
+      <div style="background:var(--goldl);border-radius:9px;padding:10px;text-align:center;font-weight:800;color:#92650A;font-size:12.5px">الطاعة = السعادة الحقيقية في الدنيا والآخرة</div></div>
+    <div class="stry"><div class="sh">📖 قصة: سر نهي النبي ﷺ عن الأكل بالشمال 🍽️</div>
+      <div class="sb">
+        <p>كان غلام صغير يأكل مع النبي ﷺ بيده الشمال، فقال له بلطف: <strong>«يا غلام، سمِّ الله، وكُل بيمينك»</strong></p>
+        <p>الغلام نفّذ فوراً وما عاد يأكل بشماله بعدها!</p>
+        <p>🔑 كل أمر أمر به الله ففيه خير لنا، حتى لو لم نعرف الحكمة كاملة.</p>
+      </div></div>
+    <div class="actb"><div class="abh">🔍 نشاط: اكتشف الحكمة</div>
+      <div class="abb">
+        <div class="ilbl">اختر أمراً من أوامر الله:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: النهي عن الكذب">
+        <div class="ilbl" style="margin-top:7px">الحكمة التي أعرفها:</div>
+        <textarea class="inp" placeholder="اكتب ما تعرفه..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ ﴾</div><div class="as">سورة البقرة، آية ٢٢٢</div></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«الطُّهُورُ شَطْرُ الإِيمَانِ»</div><div class="hs">رواه مسلم — نصف الإيمان طهارة!</div></div>
+    <div class="card"><div class="ct">💧 خطوات الوضوء — اضغط على كل خطوة بعد تنفيذها ✓</div>
+      <div class="ws" onclick="TW(this,1)"><div class="wn">١</div><div class="wc"><h4>النية</h4><p>«نويت الوضوء لأتطهر لله»</p><div class="wnt">⚠️ فرض — بدون نية لا يصح</div></div></div>
+      <div class="ws" onclick="TW(this,2)"><div class="wn">٢</div><div class="wc"><h4>التسمية</h4><p>قل: «بسم الله»</p><div class="wnt">سنة مؤكدة</div></div></div>
+      <div class="ws" onclick="TW(this,3)"><div class="wn">٣</div><div class="wc"><h4>غسل اليدين</h4><p>٣ مرات حتى الرسغين — ابدأ باليمنى</p><div class="wnt">سنة</div></div></div>
+      <div class="ws" onclick="TW(this,4)"><div class="wn">٤</div><div class="wc"><h4>المضمضة والاستنشاق</h4><p>الفم ٣ مرات ثم الأنف ٣ مرات</p><div class="wnt">سنة</div></div></div>
+      <div class="ws" onclick="TW(this,5)"><div class="wn">٥</div><div class="wc"><h4>غسل الوجه</h4><p>من منابت الشعر للذقن، ومن أذن لأذن — ٣ مرات</p><div class="wnt">فرض</div></div></div>
+      <div class="ws" onclick="TW(this,6)"><div class="wn">٦</div><div class="wc"><h4>غسل اليدين للمرفقين</h4><p>اليمنى ثم اليسرى — ٣ مرات</p><div class="wnt">فرض — المرفق داخل</div></div></div>
+      <div class="ws" onclick="TW(this,7)"><div class="wn">٧</div><div class="wc"><h4>مسح الرأس والأذنين</h4><p>من الأمام للخلف ثم عُد — مرة واحدة</p><div class="wnt">فرض</div></div></div>
+      <div class="ws" onclick="TW(this,8)"><div class="wn">٨</div><div class="wc"><h4>غسل القدمين</h4><p>اليمنى ثم اليسرى — ٣ مرات حتى الكعبين</p><div class="wnt">فرض — الكعب داخل</div></div></div>
+    </div>
+    <div class="card"><div class="ct">🚫 نواقض الوضوء</div>
+      <div class="nwd"><div class="nwn">١</div><div><h4>الخروج من السبيلين</h4><p>بول أو غائط أو ريح</p></div></div>
+      <div class="nwd"><div class="nwn">٢</div><div><h4>النوم العميق</h4><p>نوم لا تشعر فيه بما حولك</p></div></div>
+      <div class="nwd"><div class="nwn">٣</div><div><h4>زوال العقل</h4><p>كالإغماء والسكر</p></div></div>
+      <div class="nwd"><div class="nwn">٤</div><div><h4>مس الفرج بلا حائل</h4><p>على الصحيح من أقوال العلماء</p></div></div>
+      <div class="wb">⚠️ <strong>الشك في الوضوء:</strong> إذا شككت فالأصل بقاء الطهارة — لا تتوضأ حتى تتيقّن.</div></div>
+    <div class="stry"><div class="sh">📖 قصة وضوء عثمان رضي الله عنه ✨</div>
+      <div class="sb">
+        <p>تَوضَّأ عثمان بن عفان رضي الله عنه أمام الصحابة ليُعلّمهم، ثم قال: <strong>«رأيت النبي ﷺ يتوضأ نحو وضوئي هذا»</strong></p>
+        <p>وقال ﷺ: <strong>«من توضأ نحو وضوئي هذا، ثم صلى ركعتين لا يحدث فيهما نفسه، غُفر له ما تقدم من ذنبه»</strong> متفق عليه</p>
+        <p>الوضوء الصحيح يغفر الذنوب! 💚</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۞ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ ﴾</div><div class="as">سورة المؤمنون، آية ١–٢</div></div>
+    <div class="card"><div class="ct">⏰ الصلوات الخمس</div>
+      <table><tr><th>الصلاة</th><th>وقتها</th><th>الركعات</th></tr>
+      <tr><td>🌅 الفجر</td><td>من الفجر الصادق إلى الشروق</td><td><strong>٢</strong></td></tr>
+      <tr><td>☀️ الظهر</td><td>من الزوال إلى العصر</td><td><strong>٤</strong></td></tr>
+      <tr><td>🌤️ العصر</td><td>من وقته إلى الغروب</td><td><strong>٤</strong></td></tr>
+      <tr><td>🌇 المغرب</td><td>من الغروب إلى اختفاء الشفق</td><td><strong>٣</strong></td></tr>
+      <tr><td>🌙 العشاء</td><td>من اختفاء الشفق الأحمر</td><td><strong>٤</strong></td></tr></table></div>
+    <div class="card"><div class="ct">🕌 خطوات الصلاة — اضغط للتفاصيل</div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">١ — القيام واستقبال القبلة</span><span class="sai">▼</span></div><div class="sabd">قف مستقبلاً القبلة، يداك على صدرك، عيناك تنظران موضع السجود.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٢ — تكبيرة الإحرام (ركن)</span><span class="sai">▼</span></div><div class="sabd">ارفع يديك حذاء أذنيك وقل: <strong>«الله أكبر»</strong> — هنا بدأت الصلاة. لا تصح بدونها.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٣ — قراءة الفاتحة (ركن في كل ركعة)</span><span class="sai">▼</span></div><div class="sabd">قل أعوذ بالله ثم بسم الله ثم اقرأ الفاتحة. <strong>لا تصح الصلاة بدون الفاتحة.</strong></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٤ — الركوع والطمأنينة (ركن)</span><span class="sai">▼</span></div><div class="sabd">انحنِ حتى يستوي ظهرك، يداك على ركبتيك. قل: <strong>«سبحان ربي العظيم»</strong> ثلاثاً. اطمئن.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٥ — الرفع من الركوع (ركن)</span><span class="sai">▼</span></div><div class="sabd">ارفع قائلاً: <strong>«سمع الله لمن حمده»</strong> ثم اعتدل: <strong>«ربنا ولك الحمد حمداً كثيراً طيباً مباركاً فيه»</strong></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٦ — السجود على الأعضاء السبعة (ركن)</span><span class="sai">▼</span></div><div class="sabd">اسجد على: الجبهة والأنف ✦ الكفّان ✦ الركبتان ✦ أطراف القدمين. قل: <strong>«سبحان ربي الأعلى»</strong> ثلاثاً. <em>السجود أقرب ما يكون العبد من ربه!</em></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٧ — الجلوس بين السجدتين (ركن)</span><span class="sai">▼</span></div><div class="sabd">اجلس وقل: <strong>«رب اغفر لي، رب اغفر لي»</strong> ثم اسجد الثانية.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٨ — التشهد والصلاة على النبي ﷺ</span><span class="sai">▼</span></div><div class="sabd">في الركعة الأخيرة اجلس واقرأ التشهد كاملاً، ثم صلّ على النبي ﷺ والآل.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٩ — التسليم (ركن)</span><span class="sai">▼</span></div><div class="sabd">قل: <strong>«السلام عليكم ورحمة الله»</strong> يميناً ثم يساراً. انتهت الصلاة!</div></div>
+    </div>
+    <div class="card"><div class="ct">🌸 معاني الفاتحة</div>
+      <div class="fr"><div class="fa">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="fm">أبدأ باسم الله الرحيم الذي يحبني</div></div>
+      <div class="fr"><div class="fa">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div><div class="fm">كل الشكر لله الذي خلق كل شيء</div></div>
+      <div class="fr"><div class="fa">مَالِكِ يَوْمِ الدِّينِ</div><div class="fm">هو الملك الحقيقي يوم القيامة</div></div>
+      <div class="fr"><div class="fa">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div><div class="fm">أنت وحدك أعبد وبك أستعين</div></div>
+      <div class="fr"><div class="fa">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div><div class="fm">يا الله دلّني على الطريق الصواب</div></div>
+    </div>
+    <div class="stry"><div class="sh">📖 قصة: خشوع علي رضي الله عنه 🌸</div>
+      <div class="sb">
+        <p>أُصيب علي رضي الله عنه بسهم في قدمه والألم شديد — فانتظروا حتى قام للصلاة.</p>
+        <p>خشع كاملاً فأخرجوا السهم وهو يصلي ولم يتألم!</p>
+        <p><strong>الدرس:</strong> الخشوع يجعل الصلاة أجمل تجربة في حياتك. يحتاج تدرّباً وفهماً لما تقوله.</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1e">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ أَلَمْ يَعْلَم بِأَنَّ اللَّهَ يَرَىٰ ﴾</div><div class="as">سورة العلق، آية ١٤</div></div>
+    <div class="had"><div class="hl">✦ حديث جبريل الشريف ✦</div><div class="ht">«الإِحْسَانُ: أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ»</div><div class="hs">رواه البخاري ومسلم</div></div>
+    <div class="stry"><div class="sh">📖 قصة: عمر والراعي 🐑</div>
+      <div class="sb">
+        <p>أراد عمر رضي الله عنه أن يختبر راعياً، فقال له: «قل لصاحبها إن الذئب أكلها — لن يعلم!»</p>
+        <p>فقال الراعي: <strong>«وأين الله؟! إن لم يرَنا صاحبها، فالله يرانا!»</strong></p>
+        <p>بكى عمر رضي الله عنه وأعتق الراعي — لأنه رأى فيه قلباً عظيماً. 🌟</p>
+      </div></div>
+    <div class="card"><div class="ct">✨ ١٠ طرق لتستشعر أن الله معك</div>
+      <div class="mw"><div class="mn2">١</div><div class="mt">قبل أي عمل قل: <strong>«بسم الله»</strong></div></div>
+      <div class="mw"><div class="mn2">٢</div><div class="mt">حين ترى جمال الطبيعة قل: <strong>«سبحان الله»</strong></div></div>
+      <div class="mw"><div class="mn2">٣</div><div class="mt">حين تُغرى بالذنب تذكّر: <strong>«الله يراني الآن»</strong></div></div>
+      <div class="mw"><div class="mn2">٤</div><div class="mt">قبل النوم راجع يومك: ما الذي أرضى الله؟</div></div>
+      <div class="mw"><div class="mn2">٥</div><div class="mt">حين تدعو، تكلّم الله كأنه يسمعك — لأنه فعلاً يسمع</div></div>
+      <div class="mw"><div class="mn2">٦</div><div class="mt">اجعل لك وِرداً يومياً من الأذكار ولو قليلاً</div></div>
+      <div class="mw"><div class="mn2">٧</div><div class="mt">تذكّر نعم الله عليك كل صباح</div></div>
+      <div class="mw"><div class="mn2">٨</div><div class="mt">احرص على <strong>«إن شاء الله»</strong> في كل خطة</div></div>
+      <div class="mw"><div class="mn2">٩</div><div class="mt">حين تشعر بالخوف قل: <strong>«حسبنا الله ونعم الوكيل»</strong></div></div>
+      <div class="mw"><div class="mn2">١٠</div><div class="mt">ابكِ في سجودك ولو دمعة</div></div>
+    </div>
+    <div class="actb"><div class="abh">✍️ دفتر المراقبة</div>
+      <div class="abb">
+        <div class="ilbl">شيء فعلته اليوم وأنت تتذكر أن الله يراك:</div>
+        <textarea class="inp" placeholder="اكتب موقفاً حقيقياً..."></textarea>
+        <div class="ilbl" style="margin-top:8px">كيف شعرت حين تذكّرت أن الله يراك؟</div>
+        <textarea class="inp" placeholder="صِف شعورك..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1f">
+    <div class="card"><div class="ct">✅ تحديات الباب الأول</div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الصلاة</h4><p>صلّ ٥ صلوات في وقتها ٣ أيام متتالية</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الوضوء</h4><p>تعلّم الوضوء الصحيح وطبّقه بنفسك</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المراقبة</h4><p>قل «الله يراني» قبل كل عمل مرة اليوم</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الذكر</h4><p>قل «سبحان الله» ١٠ مرات حين ترى شيئاً جميلاً</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المعرفة</h4><p>احفظ اسمَين من أسماء الله الحسنى مع معناهما</p></div></div>
+      <div id="r1" style="display:none;margin-top:10px;padding:12px;background:var(--gl);border-radius:9px;text-align:center;font-weight:800;color:var(--g1)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الأول 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--g1);margin-top:12px">﴿ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg2">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h2" data-e="⭐"><div class="un">✦ الباب الثاني ✦</div><h2>بابي مع نفسي</h2><span class="ua">الثقة وصناعة المستقبل</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('2','a',this)">١ — أنا مميّز</button>
+    <button class="sbtn" onclick="S('2','b',this)">٢ — ثقتي بنفسي</button>
+    <button class="sbtn" onclick="S('2','c',this)">٣ — قراراتي</button>
+    <button class="sbtn" onclick="S('2','d',this)">٤ — أهدافي</button>
+    <button class="sbtn" onclick="S('2','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s2a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ ﴾</div><div class="as">سورة الإسراء، آية ٧٠</div></div>
+    <div class="card"><div class="ct">✨ أنا مميّز — من سن ٦ سنوات</div>
+      <p class="ip">الله خلقك مميزاً فريداً — لا يوجد في العالم شخص بصمة إصبعه مثلك! لديك مواهب وقدرات خاصة بك. هذه هبات من الله لك وحدك.</p>
+      <p class="ip"><strong style="color:var(--purple)">الثقة بالنفس = أن تعرف أن الله أعطاك مواهب وأن عليك استثمارها في الخير.</strong></p></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«المُؤمِنُ القَوِيُّ خَيرٌ وَأَحَبُّ إلى اللهِ مِنَ المُؤمِنِ الضَّعِيفِ»</div><div class="hs">رواه مسلم — القوي: قوي في إيمانه وعزيمته وشخصيته</div></div>
+    <div class="stry"><div class="sh">📖 قصة: موسى ﷺ والعصا 🌿</div>
+      <div class="sb">
+        <p>كان موسى ﷺ يحمل عصا بسيطة يرعى بها غنمه.</p>
+        <p>حين أرسله الله لفرعون، جعل الله في هذه العصا معجزات عظيمة — تنقلب ثعباناً وتضرب البحر فينفلق!</p>
+        <p><strong>الدرس:</strong> الموهبة البسيطة في يد إنسان مؤمن تصبح شيئاً عظيماً. ما هي «عصاك»؟ 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ خريطة مواهبي</div>
+      <div class="abb">
+        <div class="ilbl">الأشياء التي أجيدها (اكتب ٣ على الأقل):</div>
+        <textarea class="inp" placeholder="أجيد الرسم — أحفظ بسرعة — أساعد الآخرين..."></textarea>
+        <div class="sbn" style="margin-top:11px">✦ كل صباح قل أمام المرآة: «أنا مميّز وهذا من فضل الله» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ ﴾</div><div class="as">سورة آل عمران، آية ١٣٩</div></div>
+    <div class="card"><div class="ct">💪 الثقة الحقيقية</div>
+      <p class="ip">الثقة بالنفس ليست الغرور. الغرور: «أنا أفضل من الجميع». الثقة: «أملك مواهب من الله وأنا قادر على النجاح بتوفيقه».</p>
+      <div class="ig">
+        <div class="ib" style="background:var(--gxl)"><div style="font-size:18px">✅</div><div style="font-size:12px;font-weight:800;color:var(--g1)">ثقة بالنفس</div><div style="font-size:10.5px;color:var(--grey)">أعرف قيمتي وأعمل بجد مع التوكل على الله</div></div>
+        <div class="ib" style="background:var(--redl)"><div style="font-size:18px">❌</div><div style="font-size:12px;font-weight:800;color:var(--red)">غرور</div><div style="font-size:10.5px;color:var(--grey)">أظن أنني أفضل من الجميع وأحتقر الآخرين</div></div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 قصة: الإمام الشافعي وثقته 📚</div>
+      <div class="sb">
+        <p>كان الإمام الشافعي يتيماً فقيراً — لم يكن لديه مال يشتري به الورق! كان يكتب على العظام والجلود.</p>
+        <p>حفظ القرآن وهو في السابعة، وأصبح مفتياً وهو في الخامسة عشرة!</p>
+        <p><strong>الدرس:</strong> العائق الحقيقي الوحيد هو أن تقول «لا أستطيع». 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ رسالتي لنفسي</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:90px" placeholder="عزيزي أنا... أنت تملك... أنت قادر على..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَشَاوِرْهُمْ فِي الْأَمْرِ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ ﴾</div><div class="as">سورة آل عمران، آية ١٥٩</div></div>
+    <div class="card"><div class="ct">🧭 مصفوفة القرار الإسلامي</div>
+      <p class="ip">قبل أي قرار كبير اسأل نفسك ٤ أسئلة:</p>
+      <div style="display:grid;gap:8px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">١ — هل يُرضي الله؟</strong> هل هذا القرار حلال؟</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">٢ — هل يضر أحداً؟</strong> هل سيؤذي نفسي أو غيري؟</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">٣ — هل يناسب أهدافي؟</strong> هل يقربني من هدفي؟</div>
+        <div style="background:var(--goldl);border-radius:8px;padding:10px;border-right:4px solid var(--gold);font-size:13px"><strong style="color:#92650A">٤ — صلاة الاستخارة</strong> طلب التوفيق من الله</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 قصة: يوسف ﷺ وقراراته 🌟</div>
+      <div class="sb">
+        <p>مرّ يوسف ﷺ بمحن عظيمة: البئر، العبودية، السجن — في كل موقف اختار الصبر والتوكل على الله.</p>
+        <p>حين عُرض عليه الحرام قال: <strong>«مَعَاذَ اللَّهِ!»</strong> — رفض رغم الضغط والإغراء.</p>
+        <p><strong>الدرس:</strong> القرار الصحيح نهايته دائماً أفضل حتى لو كان صعباً في البداية. 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">🎯 طبّق مصفوفة القرار</div>
+      <div class="abb">
+        <div class="ilbl">اكتب قراراً تفكر فيه:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: هل أنضم لهذه المجموعة؟">
+        <div class="ilbl" style="margin-top:7px">جاوب على الأسئلة الأربعة:</div>
+        <textarea class="inp" placeholder="١- هل يرضي الله؟&#10;٢- هل يضر أحداً؟&#10;٣- هل يناسب أهدافي؟&#10;٤- سأستخير الله..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ ﴾</div><div class="as">سورة الرعد، آية ١١</div></div>
+    <div class="card"><div class="ct">🎯 خارطة طريقي</div>
+      <p class="ip">الهدف الإسلامي الجيد: <strong>محدد — قابل للقياس — واقعي — بتوكل على الله.</strong></p>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">محدد:</strong> «أحفظ جزء عم» أفضل من «أحفظ القرآن»</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">قابل للقياس:</strong> «٣ صفحات في الأسبوع»</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">واقعي:</strong> يناسب وقتك وقدراتك الحالية</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">بتوكل على الله:</strong> «بعون الله سأصل لهدفي»</div>
+      </div></div>
+    <div class="actb"><div class="abh">🗺️ لوحة أهدافي</div>
+      <div class="abb">
+        <div class="ilbl">🕌 هدفي الديني:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أحفظ جزء عم">
+        <div class="ilbl" style="margin-top:6px">📚 هدفي التعليمي:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أكون الأول في الرياضيات">
+        <div class="ilbl" style="margin-top:6px">💪 هدفي الشخصي:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أتعلم السباحة">
+        <div class="ilbl" style="margin-top:6px">خطوتي الأولى هذا الأسبوع:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="ما الذي ستفعله غداً؟">
+        <div class="sbn" style="margin-top:10px">✦ «من جدّ وجد، ومن زرع حصد» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2e">
+    <div class="card"><div class="ct">✅ تحديات الباب الثاني</div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المرآة</h4><p>قل كل صباح لأسبوع: «أنا مميز وهذا من فضل الله»</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الموهبة</h4><p>استخدم موهبتك في خدمة شخص آخر هذا الأسبوع</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي القرار</h4><p>طبّق مصفوفة القرار على موقف حقيقي</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الهدف</h4><p>اكتب هدفاً واحداً وضع له خطة أسبوعية</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الاستخارة</h4><p>صلّ ركعتي الاستخارة لأي قرار تفكر فيه</p></div></div>
+      <div id="r2" style="display:none;margin-top:10px;padding:12px;background:var(--purplel);border-radius:9px;text-align:center;font-weight:800;color:var(--purple)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الثاني 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--purple);margin-top:12px">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg3">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h3" data-e="🏠"><div class="un">✦ الباب الثالث ✦</div><h2>بابي مع والديّ</h2><span class="ua">البر والامتنان والتواصل</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('3','a',this)">١ — ماذا فعلا؟</button>
+    <button class="sbtn" onclick="S('3','b',this)">٢ — الامتنان</button>
+    <button class="sbtn" onclick="S('3','c',this)">٣ — كيف أتكلم؟</button>
+    <button class="sbtn" onclick="S('3','d',this)">٤ — بر الوالدين</button>
+    <button class="sbtn" onclick="S('3','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s3a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَبِالْوَالِدَيْنِ إِحْسَانًا ﴾</div><div class="as">سورة البقرة، آية ٨٣</div></div>
+    <div class="card"><div class="ct">💚 ماذا فعل والداك من أجلك؟</div>
+      <p class="ip">قبل أن تُولد، كانت أمك تحملك تسعة أشهر — تأكل لأجلك، لا تنام لأجلك، تتألم لأجلك.</p>
+      <p class="ip">حين وُلدت كنت لا تستطيع شيئاً — أطعماك، حملاك، علّماك كل شيء. كل كلمة تقولها تعلّمتها بفضلهما.</p></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«رِضَا اللهِ فِي رِضَا الوَالِدَيْنِ، وَسَخَطُ اللهِ فِي سَخَطِ الوَالِدَيْنِ»</div><div class="hs">رواه الترمذي وصححه الألباني</div></div>
+    <div class="stry"><div class="sh">📖 قصة: أم موسى وتضحيتها 💚</div>
+      <div class="sb">
+        <p>أوحى الله لأم موسى أن تضع طفلها في صندوق في النيل لتنجيه من فرعون — كم كان قلبها يؤلمها!</p>
+        <p>لكن الله ردّه إليها: <strong>﴿ فَرَدَدْنَاهُ إِلَىٰ أُمِّهِ كَيْ تَقَرَّ عَيْنُهَا ﴾</strong></p>
+        <p>هكذا حب الأم — يتحمل المستحيل لأجل طفلها! 💚</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ كتاب الشكر</div>
+      <div class="abb">
+        <div class="ilbl">أجمل ٣ أشياء فعلها والداك من أجلك:</div>
+        <textarea class="inp" placeholder="١-&#10;٢-&#10;٣-"></textarea>
+        <div class="sbn" style="margin-top:10px">✦ هذا الأسبوع: افعل شيئاً جميلاً لأحد والديك بدون أن يطلب منك ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ أَنِ اشْكُرْ لِي وَلِوَالِدَيْكَ إِلَيَّ الْمَصِيرُ ﴾</div><div class="as">سورة لقمان، آية ١٤</div></div>
+    <div class="card"><div class="ct">🌸 كيف تُعبّر عن امتنانك؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالكلام:</strong> «يا أمي، شكراً على كل شيء. أحبك.»</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالتصرف:</strong> المساعدة في المنزل بدون طلب</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالدعاء:</strong> «اللهم اغفر لوالديّ وارحمهما»</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالتفوق:</strong> نجاحك هو أعظم هدية تقدمها لهما</div>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ رسالة لوالديك</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:100px" placeholder="عزيزي أبي / عزيزتي أمي...&#10;أريد أن أخبرك أن...&#10;أشكرك على...&#10;أحبك لأن..."></textarea>
+        <div class="sbn" style="margin-top:9px">✦ اطبع هذه الرسالة وأعطها لهم — ستجعلهم يبكون من الفرح ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًا كَرِيمًا ﴾</div><div class="as">سورة الإسراء، آية ٢٣</div></div>
+    <div class="card"><div class="ct">💬 كيف أتكلم مع والديّ؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ الصواب:</strong> «أبي، لو تكرمت... رأيي أن... هل من الممكن...»</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">❌ الخطأ:</strong> الصراخ — المقاطعة — إظهار الضيق</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ عند الرفض:</strong> «حاضر» — ثم ناقش بهدوء لاحقاً</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 سيناريو: رفضوا طلبك 🎭</div>
+      <div class="sb">
+        <p>طلبت الذهاب في رحلة فرفض أبوك.</p>
+        <p>١ — تنفّس واهدأ. ٢ — في وقت مناسب: «أبي، هل تسمح أن أشرح لك؟» ٣ — اعرض حلولاً: «يمكنني أن أتصل كل ساعة.» ٤ — إن رفض: «حاضر يا أبي.»</p>
+        <p><strong>النتيجة:</strong> ستكسب ثقته وسيوافق في المرات القادمة! 💚</p>
+      </div></div>
+    <div class="card"><div class="ct">💬 جمل أستخدمها</div>
+      <div style="display:grid;gap:6px">
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أبي / أمي، هل لدي دقيقة أتكلم معك؟»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أفهم وجهة نظرك، لكن أريد أن أشرح لك...»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أنا لا أعارضك، فقط أريدك أن تفهمني»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«حاضر يا أبي، سأفكر في ما قلته»</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ ﴾</div><div class="as">سورة الإسراء، آية ٢٤</div></div>
+    <div class="card"><div class="ct">💎 بر الوالدين — أعظم العبادات بعد الصلاة</div>
+      <p class="ip">سأل رجل النبي ﷺ: «أي العمل أحب إلى الله؟» قال: <strong>«الصلاة على وقتها»</strong> قال: «ثم أي؟» قال: <strong>«بر الوالدين»</strong> قال: «ثم أي؟» قال: <strong>«الجهاد في سبيل الله»</strong> — متفق عليه.</p>
+      <p class="ip">بر الوالدين جاء قبل الجهاد! خدمة والديك عبادة عظيمة.</p></div>
+    <div class="stry"><div class="sh">📖 قصة: أويس القرني وبره بأمه 🌹</div>
+      <div class="sb">
+        <p>أراد أويس القرني زيارة النبي ﷺ — لكن أمه كانت مريضة فبقي يخدمها.</p>
+        <p>قال النبي ﷺ لعمر وعلي: <strong>«يأتيكم رجل من اليمن يقال له أويس، لا يدع لله بخير إلا أعطاه إياه»</strong></p>
+        <p>بر الأم رفع مقامه أعلى من كثيرين ممن رأوا النبي ﷺ! 🌹</p>
+      </div></div>
+    <div class="actb"><div class="abh">📓 مفكرة البر الأسبوعية</div>
+      <div class="abb">
+        <div class="ilbl">اكتب ٣ أشياء ستفعلها لوالديك هذا الأسبوع:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="١ — ">
+        <input class="inp" style="min-height:auto;margin-top:6px" type="text" placeholder="٢ — ">
+        <input class="inp" style="min-height:auto;margin-top:6px" type="text" placeholder="٣ — ">
+        <div class="sbn" style="margin-top:10px">✦ قلها الآن: «اللهم اغفر لوالديّ وارحمهما» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3e">
+    <div class="card"><div class="ct">✅ تحديات الباب الثالث</div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المفاجأة</h4><p>افعل شيئاً جميلاً لأحد والديك بدون أن يطلب منك</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الدعاء</h4><p>ادعُ لوالديك بعد كل صلاة هذا الأسبوع</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الرسالة</h4><p>اكتب رسالة امتنان لأحد والديك وأعطها له</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الحوار</h4><p>تحدّث مع أحد والديك ١٠ دقائق بدون تليفون</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الخدمة</h4><p>ساعد في المنزل بدون أن يُطلب منك ٣ أيام</p></div></div>
+      <div id="r3" style="display:none;margin-top:10px;padding:12px;background:var(--orangel);border-radius:9px;text-align:center;font-weight:800;color:var(--orange)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الثالث 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--orange);margin-top:12px">﴿ رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg4">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h4" data-e="🤝"><div class="un">✦ الباب الرابع ✦</div><h2>بابي مع أصدقائي</h2><span class="ua">الاختيار الصحيح وحدود العلاقات</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('4','a',this)">١ — الصديق الصالح</button>
+    <button class="sbtn" onclick="S('4','b',this)">٢ — كيف أختار؟</button>
+    <button class="sbtn" onclick="S('4','c',this)">٣ — لا للاستغلال</button>
+    <button class="sbtn" onclick="S('4','d',this)">٤ — حدود العلاقات</button>
+    <button class="sbtn" onclick="S('4','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s4a">
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«المَرءُ على دِينِ خَليلِهِ، فَلْيَنظُرْ أَحَدُكُم مَن يُخَالِل»</div><div class="hs">رواه أبو داود — أنت تتأثر بأصدقائك حتماً، فاختر بحكمة</div></div>
+    <div class="card"><div class="ct">🤝 لماذا الصديق مهم جداً؟</div>
+      <p class="ip">قال النبي ﷺ: «مثل الجليس الصالح والجليس السوء كحامل المسك ونافخ الكير» — متفق عليه</p>
+      <p class="ip"><strong style="color:var(--blue)">الصديق الجيد يُضيف إلى حياتك، والصديق السيئ يُنقص منها — حتى بدون أن تشعر!</strong></p></div>
+    <div class="stry"><div class="sh">📖 قصة: صداقة النبي ﷺ مع أبي بكر 💙</div>
+      <div class="sb">
+        <p>كان النبي ﷺ وأبو بكر يشتركان في نفس القيم: الصدق والأمانة والكرم — قبل الإسلام!</p>
+        <p>حين جاء الإسلام، وقف أبو بكر مع النبي في أصعب اللحظات — لأن صداقتهما كانت مبنية على الخير.</p>
+        <p><strong>الدرس:</strong> الصديق الحقيقي يكون معك في الصعب ويذكّرك بالله لا بالمعصية. 💙</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ صفات صديقي المثالي</div>
+      <div class="abb">
+        <div class="ilbl">اكتب ٥ صفات تبحث عنها:</div>
+        <textarea class="inp" placeholder="١- صادق&#10;٢- يذكّرني بالله&#10;٣-&#10;٤-&#10;٥-"></textarea>
+        <div class="sbn" style="margin-top:10px">✦ «كن الصديق الذي تريد أن تجده» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ الْأَخِلَّاءُ يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا الْمُتَّقِينَ ﴾</div><div class="as">سورة الزخرف، آية ٦٧</div></div>
+    <div class="card"><div class="ct">🔍 كيف أختار صديقي؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">✅ ابحث عن:</strong> صادق — يذكّرك بالله — يسعدك — صاحب أخلاق</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;border-right:4px solid #DC2626;font-size:13px"><strong style="color:var(--red)">❌ احذر من:</strong> يشجعك على الكذب — يُبعدك عن العبادة — يضغط عليك</div>
+        <div style="background:var(--bluel);border-radius:8px;padding:10px;border-right:4px solid var(--bluea);font-size:13px"><strong style="color:var(--blue)">💡 اختبار:</strong> «هل أصبحت أفضل إنساناً بعد هذه الصداقة؟»</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 حديث: الأرواح جنود مجنّدة ✨</div>
+      <div class="sb">
+        <p>قال النبي ﷺ: «الأرواح جنود مجنّدة، فما تعارف منها ائتلف، وما تناكر منها اختلف.» — رواه البخاري</p>
+        <p><strong>إن كنت تريد أصدقاء صالحين، فكن أنت صالحاً أولاً — وستجذبهم إليك تلقائياً.</strong> 🌟</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4c">
+    <div class="card"><div class="ct">🛡️ كيف لا أُستغل؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">🚩 الصداقة السامة:</strong> يطلب دائماً ولا يُعطي — يُشعرك بالذنب حين ترفض — لا يحترم «لا»</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">💚 الصداقة الحقيقية:</strong> يحترم رفضك — يسعدك بدون مقابل — يذكّرك بالله</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 سيناريو: ضغط الأقران 🎭</div>
+      <div class="sb">
+        <p>قال لك صديقك: «كلنا سنغش في الامتحان، إن لم تشارك ستخون الجماعة!»</p>
+        <p>١ — لا تتسرع. ٢ — تذكّر: «من يضغط عليك للخطأ ليس صديقاً حقيقياً.» ٣ — قل بثقة: «أنا لن أغش، وهذا قراري.» ٤ — ابتعد بهدوء. 💪</p>
+      </div></div>
+    <div class="card"><div class="ct">💬 جمل أقولها بثقة</div>
+      <div style="display:grid;gap:6px">
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«شكراً، لكن هذا ليس شيئاً أريد فعله»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«لي رأي مختلف وأنا أحترم رأيك»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«لا، ولست ملزماً بتفسير رفضي»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«الصداقة الحقيقية لا تتطلب مخالفة قيمي»</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا ﴾</div><div class="as">سورة الإسراء، آية ٣٢ — الوقاية خير من العلاج</div></div>
+    <div class="card"><div class="ct">⚖️ حدود العلاقات — من سن ١١ سنوات</div>
+      <p class="ip">الإسلام لم يُحرّم العلاقات الطبيعية — بل وضع حدوداً تحميك وتحمي الآخرين.</p>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ مسموح:</strong> التعامل الطبيعي في المدرسة — التعاون — الاحترام المتبادل</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">⚠️ احذر:</strong> الخلوة — العلاقة العاطفية السرية — التعلق قبل الزواج</div>
+      </div>
+      <div class="wb" style="margin-top:10px">💡 <strong>لماذا هذه الحدود؟</strong> ليست عقاباً بل حماية لقلبك من الألم.</div></div>
+    <div class="stry"><div class="sh">📖 درس: الوقاية خير من العلاج 🛡️</div>
+      <div class="sb">
+        <p>قال الله: «لا تقربوا» — لم يقل «لا تفعلوا» فقط، بل لا تقتربوا من الطريق المؤدي إليه!</p>
+        <p><strong>القاعدة الذهبية:</strong> كل شيء تخجل أن يراك فيه والداك أو الله — لا تفعله. 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ قواعدي في التواصل الاجتماعي</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:80px" placeholder="مثال:&#10;— لن أرسل رسائل خاصة لشخص لا أعرفه&#10;— لن أشارك محتوى يُخجل والديّ&#10;— سأضع هاتفي في غرفة المعيشة..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4e">
+    <div class="card"><div class="ct">✅ تحديات الباب الرابع</div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الاختيار</h4><p>حدّد ٣ صفات تبحث عنها في صديقك وطبّقها</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي «لا»</h4><p>قل «لا» لطلب خاطئ هذا الأسبوع بثقة وأدب</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الصداقة</h4><p>افعل شيئاً جميلاً لصديقك بدون أن تطلب مقابلاً</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي القواعد</h4><p>اكتب قواعدك في التواصل الاجتماعي والتزم بها</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي النموذج</h4><p>كن الصديق الذي تريد أن تجده — طبّقه هذا الأسبوع</p></div></div>
+      <div id="r4" style="display:none;margin-top:10px;padding:12px;background:var(--bluel);border-radius:9px;text-align:center;font-weight:800;color:var(--blue)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الرابع 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--blue);margin-top:12px">﴿ الْأَخِلَّاءُ يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا الْمُتَّقِينَ ﴾</div>
+    </div>
+  </div>
+</div></div>
+<footer class="ftb">
+  <div class="fq">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</div>
+  <p>برنامج أبوابي الأربعة — التربية الإسلامية المتكاملة للأطفال</p>
+  <p>استناداً على منهج أهل السنة والجماعة 💚</p>
+</footer>
+<script>
+function goHome(){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pg0').classList.add('active');
+  document.querySelectorAll('.top-nav .nlnks button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('nb0').classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function showDoor(n){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('pg'+n).classList.add('active');
+  document.querySelectorAll('.top-nav .nlnks button').forEach(b=>b.classList.remove('active'));
+  document.getElementById('nb'+n).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function S(door,sec,btn){
+  document.querySelectorAll('#pg'+door+' .sc').forEach(s=>s.classList.remove('active'));
+  document.getElementById('s'+door+sec).classList.add('active');
+  btn.closest('.snav').querySelectorAll('.sbtn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  window.scrollTo({top:100,behavior:'smooth'});
+}
+function MN(el,m){
+  var d=document.getElementById('mnd');
+  d.style.display='block'; d.innerText=m;
+  document.querySelectorAll('.nc').forEach(c=>c.style.opacity='0.55');
+  el.style.opacity='1';
+}
+function TW(el,n){
+  el.classList.toggle('done');
+  el.querySelector('.wn').innerText=el.classList.contains('done')?'✓':String(n);
+}
+function TS(el){el.classList.toggle('open');}
+function TC(el,rid){
+  el.classList.toggle('ckd');
+  el.querySelector('.chb').innerText=el.classList.contains('ckd')?'✓':'';
+  var all=el.closest('.card').querySelectorAll('.chi');
+  var done=el.closest('.card').querySelectorAll('.chi.ckd').length;
+  var r=document.getElementById(rid);
+  if(done===all.length){r.style.display='block';r.innerText='🏆 ماشاءالله! أتممت جميع التحديات! إن شاء الله ⭐';}
+  else if(done>0){r.style.display='block';r.innerText='✨ أنجزت '+done+' من '+all.length+' — استمر! الله يرى كل خطوة 💚';}
+  else r.style.display='none';
+}
+var cc={};
+function AC(id){
+  if(!cc[id])cc[id]=0;
+  if(cc[id]>=5)return;
+  cc[id]++;
+  var d=document.createElement('div');
+  d.style.cssText='display:flex;align-items:center;gap:7px;margin-bottom:6px';
+  d.innerHTML='<div style="width:20px;height:20px;background:var(--g1);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex-shrink:0">'+cc[id]+'</div><input class="inp" style="min-height:auto;flex:1" type="text" placeholder="اكتب المخلوق وقل: سبحان الله!">';
+  document.getElementById(id).appendChild(d);
+}
+</script>
+</body></html>
