@@ -1,0 +1,2516 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أبوابي الأربعة — التربية الإسلامية للأطفال</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800;900&family=Amiri:wght@400;700&display=swap');
+:root{--g1:#1B4332;--g2:#2D6A4F;--g3:#40916C;--g4:#52B788;--gl:#D8F3DC;--gxl:#F0FAF4;
+--gold:#C9A84C;--goldl:#FFF8E7;--dark:#1A1A2E;--grey:#6B7280;
+--blue:#1B3A6B;--bluea:#3A86FF;--bluel:#EBF3FF;
+--purple:#5B2D8E;--purplel:#F5F0FF;--red:#991B1B;--redl:#FFF0F0;
+--orange:#B45309;--orangel:#FFF7E6;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Tajawal','Amiri',sans-serif;background:#F0FAF4;color:var(--dark);line-height:1.8;}
+.top-nav{background:var(--g1);padding:0 14px;display:flex;align-items:center;justify-content:space-between;height:52px;position:sticky;top:0;z-index:200;box-shadow:0 2px 12px rgba(0,0,0,.3);}
+.top-nav .logo{color:var(--gold);font-size:14px;font-weight:900;cursor:pointer;white-space:nowrap;}
+.top-nav .nlnks{display:flex;gap:5px;flex-wrap:wrap;}
+.top-nav .nlnks button{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);color:white;padding:5px 11px;border-radius:16px;font-family:'Tajawal',sans-serif;font-size:11.5px;font-weight:700;cursor:pointer;transition:all .2s;}
+.top-nav .nlnks button:hover,.top-nav .nlnks button.active{background:var(--gold);color:var(--g1);border-color:var(--gold);}
+.page{display:none;}.page.active{display:block;}
+.cont{max-width:880px;margin:0 auto;padding:20px 14px 60px;}
+.hero{background:linear-gradient(135deg,var(--g1) 0%,#2D6A4F 60%,#1a3d2e 100%);color:white;text-align:center;padding:50px 18px 42px;overflow:hidden;}
+.hero h1{font-size:clamp(28px,6vw,50px);font-weight:900;margin-bottom:8px;}
+.hero .sub{font-size:14px;opacity:.85;margin-bottom:16px;}
+.badge{display:inline-block;background:rgba(201,168,76,.2);border:1px solid rgba(201,168,76,.5);color:var(--gold);padding:4px 16px;border-radius:18px;font-size:12px;font-weight:700;letter-spacing:2px;margin-bottom:14px;}
+.hstats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-top:12px;}
+.hstats span{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);color:white;padding:4px 13px;border-radius:16px;font-size:12px;font-weight:600;}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:16px;margin-top:22px;}
+.dc{border-radius:20px;padding:24px 20px;cursor:pointer;transition:all .3s;position:relative;overflow:hidden;color:white;border:2px solid transparent;}
+.dc:hover{transform:translateY(-4px);}
+.dcbg{position:absolute;bottom:-8px;left:-8px;font-size:80px;opacity:.08;}
+.dc .dn{font-size:10px;letter-spacing:3px;font-weight:700;margin-bottom:4px;}
+.dc h3{font-size:21px;font-weight:900;margin-bottom:3px;}
+.dc .ds{font-size:12px;opacity:.8;margin-bottom:9px;}
+.dc .dd{font-size:11px;line-height:1.7;margin-bottom:11px;}
+.dages{display:flex;flex-wrap:wrap;gap:4px;}
+.dage{background:rgba(255,255,255,.15);border-radius:10px;padding:2px 9px;font-size:10px;font-weight:600;}
+.darr{margin-top:10px;font-size:11px;font-weight:700;opacity:.8;}
+.uh{border-radius:17px;padding:24px;margin-bottom:18px;text-align:center;position:relative;overflow:hidden;color:white;}
+.uh::before{content:attr(data-e);position:absolute;left:12px;top:8px;font-size:60px;opacity:.12;}
+.uh .un{font-size:10.5px;letter-spacing:3px;color:var(--gold);font-weight:700;margin-bottom:4px;}
+.uh h2{font-size:clamp(18px,4vw,26px);font-weight:900;margin-bottom:4px;}
+.uh .ua{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);padding:3px 12px;border-radius:12px;font-size:11.5px;}
+.card{background:white;border-radius:14px;padding:18px;margin-bottom:14px;box-shadow:0 2px 10px rgba(0,0,0,.07);}
+.ct{font-size:14px;font-weight:800;color:var(--g1);margin-bottom:10px;}
+.ip{font-size:13px;line-height:1.9;color:#374151;margin-bottom:10px;}
+.ayah{background:linear-gradient(135deg,#EEF7F2,#F5FBF7);border:2px solid var(--gold);border-radius:14px;padding:18px 15px;text-align:center;margin-bottom:14px;}
+.al{color:var(--gold);font-size:10.5px;font-weight:700;letter-spacing:2px;margin-bottom:6px;}
+.at{font-family:'Amiri',serif;font-size:clamp(15px,3.5vw,19px);color:var(--g1);line-height:2.1;margin-bottom:4px;}
+.as{color:var(--grey);font-size:11px;}
+.had{background:var(--gxl);border-right:5px solid var(--g3);border-radius:10px;padding:15px;margin-bottom:14px;}
+.hl{color:var(--g1);font-size:10.5px;font-weight:700;letter-spacing:1px;margin-bottom:4px;}
+.ht{font-family:'Amiri',serif;font-size:15px;color:var(--dark);line-height:1.9;margin-bottom:3px;}
+.hs{color:var(--grey);font-size:10.5px;}
+.stry{background:#FFF9F0;border:1px solid #F0D9A8;border-radius:14px;overflow:hidden;margin-bottom:14px;}
+.sh{background:linear-gradient(135deg,var(--gold),#B8860B);color:white;padding:11px 16px;font-size:13px;font-weight:800;}
+.sb{padding:15px;}
+.sb p{margin-bottom:7px;font-size:13px;line-height:1.9;color:#4A3728;}
+.actb{background:#F0F7FF;border:1px solid #BFD9FF;border-radius:14px;overflow:hidden;margin-bottom:14px;}
+.abh{background:linear-gradient(135deg,var(--blue),#2D5AA0);color:white;padding:11px 16px;font-size:13px;font-weight:800;}
+.abb{padding:15px;}
+.inp{width:100%;border:2px solid var(--gl);border-radius:8px;padding:9px 12px;font-family:'Tajawal',sans-serif;font-size:12.5px;color:var(--dark);background:var(--gxl);margin-top:5px;resize:vertical;min-height:44px;transition:border-color .2s;}
+.inp:focus{outline:none;border-color:var(--g3);}
+.ilbl{font-size:11.5px;font-weight:700;color:var(--grey);margin-bottom:2px;}
+.sbn{background:var(--goldl);border-radius:10px;padding:11px 15px;text-align:center;color:#92650A;font-weight:800;font-size:12.5px;margin-bottom:14px;}
+.snav{display:flex;gap:6px;padding:12px 0;flex-wrap:wrap;}
+.sbtn{padding:7px 14px;border-radius:16px;border:1.5px solid var(--gl);background:var(--gxl);color:var(--g1);cursor:pointer;font-family:'Tajawal',sans-serif;font-size:12px;font-weight:700;transition:all .2s;}
+.sbtn:hover,.sbtn.active{background:var(--g1);color:white;border-color:var(--g1);}
+.sc{display:none;}.sc.active{display:block;}
+.ws{display:flex;gap:11px;padding:11px;background:var(--gxl);border-radius:10px;margin-bottom:7px;border:1px solid var(--gl);cursor:pointer;transition:all .2s;}
+.ws:hover{transform:translateX(-2px);}
+.ws.done{background:#D8F3DC;border-color:var(--g3);}
+.wn{width:30px;height:30px;background:var(--g1);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:900;flex-shrink:0;}
+.ws.done .wn{background:var(--g3);}
+.wc h4{font-size:13px;font-weight:800;color:var(--g1);margin-bottom:2px;}
+.wc p{font-size:11.5px;color:var(--grey);}
+.wnt{font-size:10.5px;color:var(--g3);margin-top:2px;font-weight:600;}
+.sacc{background:white;border:2px solid var(--gl);border-radius:10px;margin-bottom:7px;cursor:pointer;overflow:hidden;}
+.sacc:hover{border-color:var(--g3);}
+.sah{display:flex;justify-content:space-between;align-items:center;padding:11px 14px;}
+.sat{font-size:13px;font-weight:800;color:var(--g1);}
+.sai{color:var(--g3);font-size:14px;transition:transform .25s;}
+.sacc.open .sai{transform:rotate(180deg);}
+.sabd{display:none;padding:0 14px 12px;border-top:1px solid var(--gl);font-size:12px;color:#374151;line-height:1.8;padding-top:10px;}
+.sacc.open .sabd{display:block;}
+.ng{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin-top:6px;}
+.nc{background:linear-gradient(135deg,var(--g1),var(--g2));color:white;border-radius:11px;padding:12px;text-align:center;cursor:pointer;transition:transform .2s;}
+.nc:hover{transform:translateY(-2px);}
+.na{font-family:'Amiri',serif;font-size:17px;margin-bottom:4px;}
+.nm{font-size:10px;opacity:.8;}
+.nwd{display:flex;gap:9px;padding:11px;background:var(--redl);border-radius:9px;border:1px solid #FECACA;margin-bottom:7px;}
+.nwn{width:24px;height:24px;background:#DC2626;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:10.5px;flex-shrink:0;}
+.nwd h4{font-size:12.5px;font-weight:800;color:var(--red);margin-bottom:2px;}
+.nwd p{font-size:11.5px;color:#7F1D1D;}
+.fr{display:grid;grid-template-columns:1fr 1.3fr;gap:0;border-bottom:1px solid var(--gl);padding:9px 0;}
+.fr:last-child{border-bottom:none;}
+.fa{font-family:'Amiri',serif;font-size:14px;color:var(--g1);line-height:1.9;}
+.fm{font-size:11.5px;color:#374151;border-right:3px solid var(--gl);padding-right:10px;display:flex;align-items:center;}
+.chi{display:flex;gap:11px;padding:12px;background:white;border:2px solid var(--gl);border-radius:11px;margin-bottom:8px;cursor:pointer;transition:all .25s;user-select:none;}
+.chi:hover{border-color:var(--g3);}
+.chi.ckd{background:var(--gxl);border-color:var(--g1);}
+.chb{width:24px;height:24px;border:2.5px solid var(--gl);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:all .2s;font-size:13px;}
+.chi.ckd .chb{background:var(--g1);border-color:var(--g1);color:white;}
+.cht h4{font-size:12.5px;font-weight:800;color:var(--g1);margin-bottom:2px;}
+.cht p{font-size:11.5px;color:var(--grey);}
+.crt{background:var(--goldl);border:3px solid var(--gold);border-radius:16px;padding:24px;text-align:center;margin-top:20px;}
+.crt h3{font-size:16px;color:var(--gold);margin-bottom:12px;}
+.crf{border-bottom:2px dashed var(--gold);padding:6px;margin:8px 0;font-size:12.5px;color:var(--grey);min-height:34px;cursor:text;}
+.ig{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:11px;}
+.ib{border-radius:10px;padding:12px;text-align:center;}
+.mw{display:flex;gap:9px;padding:9px 11px;background:white;border-radius:8px;border:1px solid var(--gl);margin-bottom:6px;}
+.mn2{width:22px;height:22px;background:var(--g1);color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;flex-shrink:0;}
+.mt{font-size:12.5px;color:var(--dark);line-height:1.7;}
+.wb{background:var(--orangel);border:1.5px solid #F59E0B;border-radius:10px;padding:12px 14px;margin-bottom:12px;font-size:12px;color:#78350F;}
+.bkbtn{display:inline-flex;align-items:center;gap:7px;background:white;border:1px solid var(--gl);color:var(--g1);padding:7px 15px;border-radius:10px;cursor:pointer;font-family:'Tajawal',sans-serif;font-size:12.5px;font-weight:700;margin-bottom:14px;box-shadow:0 2px 8px rgba(0,0,0,.08);transition:all .2s;}
+.bkbtn:hover{background:var(--g1);color:white;}
+table{width:100%;border-collapse:collapse;font-size:12.5px;}
+th{background:var(--g1);color:white;padding:8px 11px;}
+td{padding:8px 11px;}
+tr:nth-child(even){background:var(--gxl);}
+.d1{background:linear-gradient(145deg,#1B4332,#2D6A4F);border-color:#52B78844;}
+.d1:hover{border-color:#52B788;box-shadow:0 12px 36px #52B78844;}
+.d2{background:linear-gradient(145deg,#5B2D8E,#7B3FAE);border-color:#9333EA44;}
+.d2:hover{border-color:#9333EA;box-shadow:0 12px 36px #9333EA44;}
+.d3{background:linear-gradient(145deg,#B45309,#D97706);border-color:#F59E0B44;}
+.d3:hover{border-color:#F59E0B;box-shadow:0 12px 36px #F59E0B44;}
+.d4{background:linear-gradient(145deg,#0A3160,#1B4D8E);border-color:#3A86FF44;}
+.d4:hover{border-color:#3A86FF;box-shadow:0 12px 36px #3A86FF44;}
+.h1{background:linear-gradient(135deg,#1B4332,#2D6A4F);}
+.h2{background:linear-gradient(135deg,#5B2D8E,#7B3FAE);}
+.h3{background:linear-gradient(135deg,#B45309,#C2760A);}
+.h4{background:linear-gradient(135deg,#0A3160,#1B4D8E);}
+.ftb{background:var(--g1);color:white;text-align:center;padding:24px 18px;margin-top:32px;}
+.ftb .fq{font-family:'Amiri',serif;font-size:15px;color:var(--gold);margin-bottom:4px;}
+.ftb p{font-size:11px;opacity:.6;margin-top:4px;}
+@media(max-width:580px){.ng{grid-template-columns:1fr 1fr;}.fr{grid-template-columns:1fr;}.fm{border-right:none;border-top:2px solid var(--gl);padding-right:0;padding-top:6px;margin-top:3px;}.ig{grid-template-columns:1fr;}.top-nav .nlnks button{font-size:10.5px;padding:4px 8px;}}
+</style>
+</head>
+<body>
+<nav class="top-nav">
+  <div class="logo" onclick="goHome()">🌙 أبوابي الأربعة</div>
+  <div class="nlnks">
+    <button onclick="goHome()" id="nb0" class="active">🏠</button>
+    <button onclick="showDoor(1)" id="nb1">١ ربي</button>
+    <button onclick="showDoor(2)" id="nb2">٢ نفسي</button>
+    <button onclick="showDoor(3)" id="nb3">٣ والديّ</button>
+    <button onclick="showDoor(4)" id="nb4">٤ أصدقائي</button>
+  </div>
+</nav>
+<div class="page active" id="pg0">
+  <div class="hero">
+    <div class="badge">✦ برنامج تربوي إسلامي متكامل ✦</div>
+    <h1>أبوابي الأربعة 🌙</h1>
+    <div class="sub">دورة التربية الإسلامية للأطفال من سن ٤ إلى ١٤ عاماً — منهج أهل السنة والجماعة</div>
+    <div class="hstats"><span>🚪 ٤ أبواب</span><span>📚 ٢٠ وحدة</span><span>📖 قرآن وسنة</span><span>✋ أنشطة تفاعلية</span></div>
+  </div>
+  <div class="cont">
+    <div style="text-align:center;margin:10px 0 16px">
+      <div style="font-family:'Amiri',serif;font-size:17px;color:var(--g1)">﴿ أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ ﴾</div>
+      <div style="font-size:11px;color:var(--grey);margin-top:3px">سورة الرعد، آية ٢٨</div>
+    </div>
+    <div class="dgrid">
+      <div class="dc d1" onclick="showDoor(1)"><div class="dcbg">🌙</div><div class="dn" style="color:#52B788">الباب الأول</div><h3>بابي مع ربي</h3><div class="ds">علاقتي بالله سبحانه وتعالى</div><div class="dd">من معرفة الله والأسماء الحسنى إلى الوضوء والصلاة والخشوع والمراقبة</div><div class="dages"><span class="dage">٤–٦</span><span class="dage">٧–١٠</span><span class="dage">١١–١٤</span></div><div class="darr">٥ وحدات ← افتح الباب</div></div>
+      <div class="dc d2" onclick="showDoor(2)"><div class="dcbg">⭐</div><div class="dn" style="color:#C77DFF">الباب الثاني</div><h3>بابي مع نفسي</h3><div class="ds">الثقة وصناعة المستقبل</div><div class="dd">شخصية واثقة تعرف مواهبها وتتخذ قراراتها وتضع أهدافها بتوكل على الله</div><div class="dages"><span class="dage">٦–٩</span><span class="dage">١٠–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+      <div class="dc d3" onclick="showDoor(3)"><div class="dcbg">🏠</div><div class="dn" style="color:#FCD34D">الباب الثالث</div><h3>بابي مع والديّ</h3><div class="ds">البر والامتنان والتواصل</div><div class="dd">قلوب ممتنة تعرف قدر الوالدين وتتواصل معهم باحترام وتحل الخلافات بحكمة</div><div class="dages"><span class="dage">٥–٨</span><span class="dage">٩–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+      <div class="dc d4" onclick="showDoor(4)"><div class="dcbg">🤝</div><div class="dn" style="color:#93C5FD">الباب الرابع</div><h3>بابي مع أصدقائي</h3><div class="ds">الاختيار الصحيح وحدود العلاقات</div><div class="dd">اختيار الأصحاب الصالحين وحماية النفس وضبط حدود العلاقات</div><div class="dages"><span class="dage">٦–٩</span><span class="dage">١٠–١٤</span></div><div class="darr">٤ وحدات ← افتح الباب</div></div>
+    </div>
+    <div style="background:white;border-radius:13px;padding:16px;margin-top:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.07);font-size:12.5px;color:var(--grey)">١ — اختر الباب &nbsp;•&nbsp; ٢ — اقرأ كل وحدة &nbsp;•&nbsp; ٣ — نفّذ الأنشطة &nbsp;•&nbsp; ٤ — أكمل التحديات الأسبوعية</div>
+  </div>
+</div>
+<div class="page" id="pg1">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h1" data-e="🌙"><div class="un">✦ الباب الأول ✦</div><h2>بابي مع ربي</h2><span class="ua">علاقتي بالله سبحانه وتعالى</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('1','a',this)">١ — من هو الله؟</button>
+    <button class="sbtn" onclick="S('1','b',this)">٢ — لماذا الأوامر؟</button>
+    <button class="sbtn" onclick="S('1','c',this)">٣ — الوضوء</button>
+    <button class="sbtn" onclick="S('1','d',this)">٤ — الصلاة</button>
+    <button class="sbtn" onclick="S('1','e',this)">٥ — الله يراني</button>
+    <button class="sbtn" onclick="S('1','f',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s1a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ ﴾</div><div class="as">سورة الحديد، آية ٤</div></div>
+    <div class="card"><div class="ct">✨ تعلّم وتفكّر — من سن ٤ سنوات</div>
+      <p class="ip">الله سبحانه وتعالى هو خالق كل شيء — السماء والأرض والشمس والقمر والنجوم... وخلقك أنت!</p>
+      <p class="ip">والله لا يشبه أي شيء نراه. هو الأول الذي لم يخلقه أحد، والآخر الذي لا ينتهي.</p>
+      <div class="ayah" style="margin-bottom:0"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ لَيْسَ كَمِثْلِهِ شَيْءٌ ﴾</div><div class="as">سورة الشورى، آية ١١</div></div></div>
+    <div class="card"><div class="ct">🌸 أسماء الله الحسنى — اضغط على كل اسم</div>
+      <div class="ng">
+        <div class="nc" onclick="MN(this,'الله — اسمه الأعظم، لا يُسمّى به أحد سواه')"><div class="na">الله</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الرحمن الرحيم — رحمته واسعة تشمل كل خلقه')"><div class="na">الرحمن الرحيم</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الخالق — خلق كل شيء من العدم بكلمة «كن فيكون»')"><div class="na">الخالق</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'السميع — يسمعك حين تدعوه حتى لو همست في الظلام')"><div class="na">السميع</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'البصير — يراك في كل مكان حتى في الظلام الدامس')"><div class="na">البصير</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'القريب — أقرب إليك من حبل الوريد')"><div class="na">القريب</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الحكيم — كل ما يفعله له حكمة وإن لم نفهمها')"><div class="na">الحكيم</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الغفور — يغفر الذنوب كلها لمن تاب وأناب إليه')"><div class="na">الغفور</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الودود — يحب عباده المؤمنين ويفرح بتوبة التائب')"><div class="na">الودود</div><div class="nm">اضغط ↓</div></div>
+        <div class="nc" onclick="MN(this,'الرزاق — يرزق كل مخلوق رزقه من الذرة إلى الفيل')"><div class="na">الرزاق</div><div class="nm">اضغط ↓</div></div>
+      </div>
+      <div id="mnd" style="display:none;margin-top:12px;padding:11px;background:var(--goldl);border-radius:9px;color:#92650A;font-weight:700;font-size:13.5px;text-align:center"></div>
+    </div>
+    <div class="stry"><div class="sh">📖 قصة البذرة الصغيرة 🌱</div>
+      <div class="sb">
+        <p>كانت هناك بذرة صغيرة جداً دفنها الفلاح في الأرض.</p>
+        <p>مرت الأيام... نزل المطر وأشرقت الشمس وحدث شيء عجيب! جذر ينزل وساق تصعد ثم أوراق خضراء وثمار لذيذة!</p>
+        <p><strong>فكّر: من جعل في البذرة هذا السر العجيب؟ من علّمها كيف تنمو؟</strong></p>
+        <p>هو الله الخالق الحكيم. 🌳</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ نشاطي: مخلوقات الله الجميلة</div>
+      <div class="abb">
+        <p style="font-size:12.5px;color:#374151;margin-bottom:9px">انظر من حولك — اكتب ٥ مخلوقات وقل بعد كل واحدة «سبحان الله»:</p>
+        <div id="cr1"></div>
+        <button onclick="AC('cr1')" style="padding:6px 14px;background:var(--blue);color:white;border:none;border-radius:7px;font-family:'Tajawal',sans-serif;font-weight:700;cursor:pointer;font-size:12px;margin-top:4px">+ أضف</button>
+        <div class="sbn" style="margin-top:11px">✦ بعد كل مخلوق قل: «سبحان الله» ✦</div>
+        <div class="ilbl">💬 من خلق النجوم؟</div>
+        <textarea class="inp" placeholder="اكتب إجابتك..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَمَا أَرْسَلْنَاكَ إِلَّا رَحْمَةً لِّلْعَالَمِينَ ﴾</div><div class="as">سورة الأنبياء، آية ١٠٧</div></div>
+    <div class="card"><div class="ct">🧠 لماذا يأمر الله وينهى؟</div>
+      <p class="ip"><strong style="color:var(--g1)">الجواب: لأنه يحبنا!</strong> الله يعلم ما يضرنا وما ينفعنا. مثل الطبيب يقول «لا تأكل الحلوى الكثيرة» — لا يظلم بل يحمي! والله أعلم وأرحم من أي طبيب.</p>
+      <div class="ig">
+        <div class="ib" style="background:var(--gxl)"><div style="font-size:20px">💚</div><div style="font-size:12.5px;font-weight:800;color:var(--g1)">أوامر الله</div><div style="font-size:11px;color:var(--grey)">رحمة ونعمة</div></div>
+        <div class="ib" style="background:var(--redl)"><div style="font-size:20px">🛡️</div><div style="font-size:12.5px;font-weight:800;color:var(--red)">نواهي الله</div><div style="font-size:11px;color:var(--grey)">حماية وسلامة</div></div>
+      </div>
+      <div style="background:var(--goldl);border-radius:9px;padding:10px;text-align:center;font-weight:800;color:#92650A;font-size:12.5px">الطاعة = السعادة الحقيقية في الدنيا والآخرة</div></div>
+    <div class="stry"><div class="sh">📖 قصة: سر نهي النبي ﷺ عن الأكل بالشمال 🍽️</div>
+      <div class="sb">
+        <p>كان غلام صغير يأكل مع النبي ﷺ بيده الشمال، فقال له بلطف: <strong>«يا غلام، سمِّ الله، وكُل بيمينك»</strong></p>
+        <p>الغلام نفّذ فوراً وما عاد يأكل بشماله بعدها!</p>
+        <p>🔑 كل أمر أمر به الله ففيه خير لنا، حتى لو لم نعرف الحكمة كاملة.</p>
+      </div></div>
+    <div class="actb"><div class="abh">🔍 نشاط: اكتشف الحكمة</div>
+      <div class="abb">
+        <div class="ilbl">اختر أمراً من أوامر الله:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: النهي عن الكذب">
+        <div class="ilbl" style="margin-top:7px">الحكمة التي أعرفها:</div>
+        <textarea class="inp" placeholder="اكتب ما تعرفه..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ إِنَّ اللَّهَ يُحِبُّ التَّوَّابِينَ وَيُحِبُّ الْمُتَطَهِّرِينَ ﴾</div><div class="as">سورة البقرة، آية ٢٢٢</div></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«الطُّهُورُ شَطْرُ الإِيمَانِ»</div><div class="hs">رواه مسلم — نصف الإيمان طهارة!</div></div>
+    <div class="card"><div class="ct">💧 خطوات الوضوء — اضغط على كل خطوة بعد تنفيذها ✓</div>
+      <div class="ws" onclick="TW(this,1)"><div class="wn">١</div><div class="wc"><h4>النية</h4><p>«نويت الوضوء لأتطهر لله»</p><div class="wnt">⚠️ فرض — بدون نية لا يصح</div></div></div>
+      <div class="ws" onclick="TW(this,2)"><div class="wn">٢</div><div class="wc"><h4>التسمية</h4><p>قل: «بسم الله»</p><div class="wnt">سنة مؤكدة</div></div></div>
+      <div class="ws" onclick="TW(this,3)"><div class="wn">٣</div><div class="wc"><h4>غسل اليدين</h4><p>٣ مرات حتى الرسغين — ابدأ باليمنى</p><div class="wnt">سنة</div></div></div>
+      <div class="ws" onclick="TW(this,4)"><div class="wn">٤</div><div class="wc"><h4>المضمضة والاستنشاق</h4><p>الفم ٣ مرات ثم الأنف ٣ مرات</p><div class="wnt">سنة</div></div></div>
+      <div class="ws" onclick="TW(this,5)"><div class="wn">٥</div><div class="wc"><h4>غسل الوجه</h4><p>من منابت الشعر للذقن، ومن أذن لأذن — ٣ مرات</p><div class="wnt">فرض</div></div></div>
+      <div class="ws" onclick="TW(this,6)"><div class="wn">٦</div><div class="wc"><h4>غسل اليدين للمرفقين</h4><p>اليمنى ثم اليسرى — ٣ مرات</p><div class="wnt">فرض — المرفق داخل</div></div></div>
+      <div class="ws" onclick="TW(this,7)"><div class="wn">٧</div><div class="wc"><h4>مسح الرأس والأذنين</h4><p>من الأمام للخلف ثم عُد — مرة واحدة</p><div class="wnt">فرض</div></div></div>
+      <div class="ws" onclick="TW(this,8)"><div class="wn">٨</div><div class="wc"><h4>غسل القدمين</h4><p>اليمنى ثم اليسرى — ٣ مرات حتى الكعبين</p><div class="wnt">فرض — الكعب داخل</div></div></div>
+    </div>
+    <div class="card"><div class="ct">🚫 نواقض الوضوء</div>
+      <div class="nwd"><div class="nwn">١</div><div><h4>الخروج من السبيلين</h4><p>بول أو غائط أو ريح</p></div></div>
+      <div class="nwd"><div class="nwn">٢</div><div><h4>النوم العميق</h4><p>نوم لا تشعر فيه بما حولك</p></div></div>
+      <div class="nwd"><div class="nwn">٣</div><div><h4>زوال العقل</h4><p>كالإغماء والسكر</p></div></div>
+      <div class="nwd"><div class="nwn">٤</div><div><h4>مس الفرج بلا حائل</h4><p>على الصحيح من أقوال العلماء</p></div></div>
+      <div class="wb">⚠️ <strong>الشك في الوضوء:</strong> إذا شككت فالأصل بقاء الطهارة — لا تتوضأ حتى تتيقّن.</div></div>
+    <div class="stry"><div class="sh">📖 قصة وضوء عثمان رضي الله عنه ✨</div>
+      <div class="sb">
+        <p>تَوضَّأ عثمان بن عفان رضي الله عنه أمام الصحابة ليُعلّمهم، ثم قال: <strong>«رأيت النبي ﷺ يتوضأ نحو وضوئي هذا»</strong></p>
+        <p>وقال ﷺ: <strong>«من توضأ نحو وضوئي هذا، ثم صلى ركعتين لا يحدث فيهما نفسه، غُفر له ما تقدم من ذنبه»</strong> متفق عليه</p>
+        <p>الوضوء الصحيح يغفر الذنوب! 💚</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ قَدْ أَفْلَحَ الْمُؤْمِنُونَ ۞ الَّذِينَ هُمْ فِي صَلَاتِهِمْ خَاشِعُونَ ﴾</div><div class="as">سورة المؤمنون، آية ١–٢</div></div>
+    <div class="card"><div class="ct">⏰ الصلوات الخمس</div>
+      <table><tr><th>الصلاة</th><th>وقتها</th><th>الركعات</th></tr>
+      <tr><td>🌅 الفجر</td><td>من الفجر الصادق إلى الشروق</td><td><strong>٢</strong></td></tr>
+      <tr><td>☀️ الظهر</td><td>من الزوال إلى العصر</td><td><strong>٤</strong></td></tr>
+      <tr><td>🌤️ العصر</td><td>من وقته إلى الغروب</td><td><strong>٤</strong></td></tr>
+      <tr><td>🌇 المغرب</td><td>من الغروب إلى اختفاء الشفق</td><td><strong>٣</strong></td></tr>
+      <tr><td>🌙 العشاء</td><td>من اختفاء الشفق الأحمر</td><td><strong>٤</strong></td></tr></table></div>
+    <div class="card"><div class="ct">🕌 خطوات الصلاة — اضغط للتفاصيل</div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">١ — القيام واستقبال القبلة</span><span class="sai">▼</span></div><div class="sabd">قف مستقبلاً القبلة، يداك على صدرك، عيناك تنظران موضع السجود.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٢ — تكبيرة الإحرام (ركن)</span><span class="sai">▼</span></div><div class="sabd">ارفع يديك حذاء أذنيك وقل: <strong>«الله أكبر»</strong> — هنا بدأت الصلاة. لا تصح بدونها.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٣ — قراءة الفاتحة (ركن في كل ركعة)</span><span class="sai">▼</span></div><div class="sabd">قل أعوذ بالله ثم بسم الله ثم اقرأ الفاتحة. <strong>لا تصح الصلاة بدون الفاتحة.</strong></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٤ — الركوع والطمأنينة (ركن)</span><span class="sai">▼</span></div><div class="sabd">انحنِ حتى يستوي ظهرك، يداك على ركبتيك. قل: <strong>«سبحان ربي العظيم»</strong> ثلاثاً. اطمئن.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٥ — الرفع من الركوع (ركن)</span><span class="sai">▼</span></div><div class="sabd">ارفع قائلاً: <strong>«سمع الله لمن حمده»</strong> ثم اعتدل: <strong>«ربنا ولك الحمد حمداً كثيراً طيباً مباركاً فيه»</strong></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٦ — السجود على الأعضاء السبعة (ركن)</span><span class="sai">▼</span></div><div class="sabd">اسجد على: الجبهة والأنف ✦ الكفّان ✦ الركبتان ✦ أطراف القدمين. قل: <strong>«سبحان ربي الأعلى»</strong> ثلاثاً. <em>السجود أقرب ما يكون العبد من ربه!</em></div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٧ — الجلوس بين السجدتين (ركن)</span><span class="sai">▼</span></div><div class="sabd">اجلس وقل: <strong>«رب اغفر لي، رب اغفر لي»</strong> ثم اسجد الثانية.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٨ — التشهد والصلاة على النبي ﷺ</span><span class="sai">▼</span></div><div class="sabd">في الركعة الأخيرة اجلس واقرأ التشهد كاملاً، ثم صلّ على النبي ﷺ والآل.</div></div>
+      <div class="sacc" onclick="TS(this)"><div class="sah"><span class="sat">٩ — التسليم (ركن)</span><span class="sai">▼</span></div><div class="sabd">قل: <strong>«السلام عليكم ورحمة الله»</strong> يميناً ثم يساراً. انتهت الصلاة!</div></div>
+    </div>
+    <div class="card"><div class="ct">🌸 معاني الفاتحة</div>
+      <div class="fr"><div class="fa">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div><div class="fm">أبدأ باسم الله الرحيم الذي يحبني</div></div>
+      <div class="fr"><div class="fa">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div><div class="fm">كل الشكر لله الذي خلق كل شيء</div></div>
+      <div class="fr"><div class="fa">مَالِكِ يَوْمِ الدِّينِ</div><div class="fm">هو الملك الحقيقي يوم القيامة</div></div>
+      <div class="fr"><div class="fa">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div><div class="fm">أنت وحدك أعبد وبك أستعين</div></div>
+      <div class="fr"><div class="fa">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div><div class="fm">يا الله دلّني على الطريق الصواب</div></div>
+    </div>
+    <div class="stry"><div class="sh">📖 قصة: خشوع علي رضي الله عنه 🌸</div>
+      <div class="sb">
+        <p>أُصيب علي رضي الله عنه بسهم في قدمه والألم شديد — فانتظروا حتى قام للصلاة.</p>
+        <p>خشع كاملاً فأخرجوا السهم وهو يصلي ولم يتألم!</p>
+        <p><strong>الدرس:</strong> الخشوع يجعل الصلاة أجمل تجربة في حياتك. يحتاج تدرّباً وفهماً لما تقوله.</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1e">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ أَلَمْ يَعْلَم بِأَنَّ اللَّهَ يَرَىٰ ﴾</div><div class="as">سورة العلق، آية ١٤</div></div>
+    <div class="had"><div class="hl">✦ حديث جبريل الشريف ✦</div><div class="ht">«الإِحْسَانُ: أَنْ تَعْبُدَ اللَّهَ كَأَنَّكَ تَرَاهُ، فَإِنْ لَمْ تَكُنْ تَرَاهُ فَإِنَّهُ يَرَاكَ»</div><div class="hs">رواه البخاري ومسلم</div></div>
+    <div class="stry"><div class="sh">📖 قصة: عمر والراعي 🐑</div>
+      <div class="sb">
+        <p>أراد عمر رضي الله عنه أن يختبر راعياً، فقال له: «قل لصاحبها إن الذئب أكلها — لن يعلم!»</p>
+        <p>فقال الراعي: <strong>«وأين الله؟! إن لم يرَنا صاحبها، فالله يرانا!»</strong></p>
+        <p>بكى عمر رضي الله عنه وأعتق الراعي — لأنه رأى فيه قلباً عظيماً. 🌟</p>
+      </div></div>
+    <div class="card"><div class="ct">✨ ١٠ طرق لتستشعر أن الله معك</div>
+      <div class="mw"><div class="mn2">١</div><div class="mt">قبل أي عمل قل: <strong>«بسم الله»</strong></div></div>
+      <div class="mw"><div class="mn2">٢</div><div class="mt">حين ترى جمال الطبيعة قل: <strong>«سبحان الله»</strong></div></div>
+      <div class="mw"><div class="mn2">٣</div><div class="mt">حين تُغرى بالذنب تذكّر: <strong>«الله يراني الآن»</strong></div></div>
+      <div class="mw"><div class="mn2">٤</div><div class="mt">قبل النوم راجع يومك: ما الذي أرضى الله؟</div></div>
+      <div class="mw"><div class="mn2">٥</div><div class="mt">حين تدعو، تكلّم الله كأنه يسمعك — لأنه فعلاً يسمع</div></div>
+      <div class="mw"><div class="mn2">٦</div><div class="mt">اجعل لك وِرداً يومياً من الأذكار ولو قليلاً</div></div>
+      <div class="mw"><div class="mn2">٧</div><div class="mt">تذكّر نعم الله عليك كل صباح</div></div>
+      <div class="mw"><div class="mn2">٨</div><div class="mt">احرص على <strong>«إن شاء الله»</strong> في كل خطة</div></div>
+      <div class="mw"><div class="mn2">٩</div><div class="mt">حين تشعر بالخوف قل: <strong>«حسبنا الله ونعم الوكيل»</strong></div></div>
+      <div class="mw"><div class="mn2">١٠</div><div class="mt">ابكِ في سجودك ولو دمعة</div></div>
+    </div>
+    <div class="actb"><div class="abh">✍️ دفتر المراقبة</div>
+      <div class="abb">
+        <div class="ilbl">شيء فعلته اليوم وأنت تتذكر أن الله يراك:</div>
+        <textarea class="inp" placeholder="اكتب موقفاً حقيقياً..."></textarea>
+        <div class="ilbl" style="margin-top:8px">كيف شعرت حين تذكّرت أن الله يراك؟</div>
+        <textarea class="inp" placeholder="صِف شعورك..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s1f">
+    <div class="card"><div class="ct">✅ تحديات الباب الأول</div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الصلاة</h4><p>صلّ ٥ صلوات في وقتها ٣ أيام متتالية</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الوضوء</h4><p>تعلّم الوضوء الصحيح وطبّقه بنفسك</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المراقبة</h4><p>قل «الله يراني» قبل كل عمل مرة اليوم</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الذكر</h4><p>قل «سبحان الله» ١٠ مرات حين ترى شيئاً جميلاً</p></div></div>
+      <div class="chi" onclick="TC(this,'r1')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المعرفة</h4><p>احفظ اسمَين من أسماء الله الحسنى مع معناهما</p></div></div>
+      
+      <button class="ggbtn" id="gb1" onclick="OG(1)">🔒 أكمل التحديات لفتح الهدية 🎁</button>
+<div id="r1" style="display:none;margin-top:10px;padding:12px;background:var(--gl);border-radius:9px;text-align:center;font-weight:800;color:var(--g1)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الأول 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--g1);margin-top:12px">﴿ رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg2">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h2" data-e="⭐"><div class="un">✦ الباب الثاني ✦</div><h2>بابي مع نفسي</h2><span class="ua">الثقة وصناعة المستقبل</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('2','a',this)">١ — أنا مميّز</button>
+    <button class="sbtn" onclick="S('2','b',this)">٢ — ثقتي بنفسي</button>
+    <button class="sbtn" onclick="S('2','c',this)">٣ — قراراتي</button>
+    <button class="sbtn" onclick="S('2','d',this)">٤ — أهدافي</button>
+    <button class="sbtn" onclick="S('2','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s2a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَقَدْ كَرَّمْنَا بَنِي آدَمَ ﴾</div><div class="as">سورة الإسراء، آية ٧٠</div></div>
+    <div class="card"><div class="ct">✨ أنا مميّز — من سن ٦ سنوات</div>
+      <p class="ip">الله خلقك مميزاً فريداً — لا يوجد في العالم شخص بصمة إصبعه مثلك! لديك مواهب وقدرات خاصة بك. هذه هبات من الله لك وحدك.</p>
+      <p class="ip"><strong style="color:var(--purple)">الثقة بالنفس = أن تعرف أن الله أعطاك مواهب وأن عليك استثمارها في الخير.</strong></p></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«المُؤمِنُ القَوِيُّ خَيرٌ وَأَحَبُّ إلى اللهِ مِنَ المُؤمِنِ الضَّعِيفِ»</div><div class="hs">رواه مسلم — القوي: قوي في إيمانه وعزيمته وشخصيته</div></div>
+    <div class="stry"><div class="sh">📖 قصة: موسى ﷺ والعصا 🌿</div>
+      <div class="sb">
+        <p>كان موسى ﷺ يحمل عصا بسيطة يرعى بها غنمه.</p>
+        <p>حين أرسله الله لفرعون، جعل الله في هذه العصا معجزات عظيمة — تنقلب ثعباناً وتضرب البحر فينفلق!</p>
+        <p><strong>الدرس:</strong> الموهبة البسيطة في يد إنسان مؤمن تصبح شيئاً عظيماً. ما هي «عصاك»؟ 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ خريطة مواهبي</div>
+      <div class="abb">
+        <div class="ilbl">الأشياء التي أجيدها (اكتب ٣ على الأقل):</div>
+        <textarea class="inp" placeholder="أجيد الرسم — أحفظ بسرعة — أساعد الآخرين..."></textarea>
+        <div class="sbn" style="margin-top:11px">✦ كل صباح قل أمام المرآة: «أنا مميّز وهذا من فضل الله» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَهِنُوا وَلَا تَحْزَنُوا وَأَنتُمُ الْأَعْلَوْنَ إِن كُنتُم مُّؤْمِنِينَ ﴾</div><div class="as">سورة آل عمران، آية ١٣٩</div></div>
+    <div class="card"><div class="ct">💪 الثقة الحقيقية</div>
+      <p class="ip">الثقة بالنفس ليست الغرور. الغرور: «أنا أفضل من الجميع». الثقة: «أملك مواهب من الله وأنا قادر على النجاح بتوفيقه».</p>
+      <div class="ig">
+        <div class="ib" style="background:var(--gxl)"><div style="font-size:18px">✅</div><div style="font-size:12px;font-weight:800;color:var(--g1)">ثقة بالنفس</div><div style="font-size:10.5px;color:var(--grey)">أعرف قيمتي وأعمل بجد مع التوكل على الله</div></div>
+        <div class="ib" style="background:var(--redl)"><div style="font-size:18px">❌</div><div style="font-size:12px;font-weight:800;color:var(--red)">غرور</div><div style="font-size:10.5px;color:var(--grey)">أظن أنني أفضل من الجميع وأحتقر الآخرين</div></div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 قصة: الإمام الشافعي وثقته 📚</div>
+      <div class="sb">
+        <p>كان الإمام الشافعي يتيماً فقيراً — لم يكن لديه مال يشتري به الورق! كان يكتب على العظام والجلود.</p>
+        <p>حفظ القرآن وهو في السابعة، وأصبح مفتياً وهو في الخامسة عشرة!</p>
+        <p><strong>الدرس:</strong> العائق الحقيقي الوحيد هو أن تقول «لا أستطيع». 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ رسالتي لنفسي</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:90px" placeholder="عزيزي أنا... أنت تملك... أنت قادر على..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَشَاوِرْهُمْ فِي الْأَمْرِ فَإِذَا عَزَمْتَ فَتَوَكَّلْ عَلَى اللَّهِ ﴾</div><div class="as">سورة آل عمران، آية ١٥٩</div></div>
+    <div class="card"><div class="ct">🧭 مصفوفة القرار الإسلامي</div>
+      <p class="ip">قبل أي قرار كبير اسأل نفسك ٤ أسئلة:</p>
+      <div style="display:grid;gap:8px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">١ — هل يُرضي الله؟</strong> هل هذا القرار حلال؟</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">٢ — هل يضر أحداً؟</strong> هل سيؤذي نفسي أو غيري؟</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">٣ — هل يناسب أهدافي؟</strong> هل يقربني من هدفي؟</div>
+        <div style="background:var(--goldl);border-radius:8px;padding:10px;border-right:4px solid var(--gold);font-size:13px"><strong style="color:#92650A">٤ — صلاة الاستخارة</strong> طلب التوفيق من الله</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 قصة: يوسف ﷺ وقراراته 🌟</div>
+      <div class="sb">
+        <p>مرّ يوسف ﷺ بمحن عظيمة: البئر، العبودية، السجن — في كل موقف اختار الصبر والتوكل على الله.</p>
+        <p>حين عُرض عليه الحرام قال: <strong>«مَعَاذَ اللَّهِ!»</strong> — رفض رغم الضغط والإغراء.</p>
+        <p><strong>الدرس:</strong> القرار الصحيح نهايته دائماً أفضل حتى لو كان صعباً في البداية. 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">🎯 طبّق مصفوفة القرار</div>
+      <div class="abb">
+        <div class="ilbl">اكتب قراراً تفكر فيه:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: هل أنضم لهذه المجموعة؟">
+        <div class="ilbl" style="margin-top:7px">جاوب على الأسئلة الأربعة:</div>
+        <textarea class="inp" placeholder="١- هل يرضي الله؟&#10;٢- هل يضر أحداً؟&#10;٣- هل يناسب أهدافي؟&#10;٤- سأستخير الله..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ إِنَّ اللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا مَا بِأَنفُسِهِمْ ﴾</div><div class="as">سورة الرعد، آية ١١</div></div>
+    <div class="card"><div class="ct">🎯 خارطة طريقي</div>
+      <p class="ip">الهدف الإسلامي الجيد: <strong>محدد — قابل للقياس — واقعي — بتوكل على الله.</strong></p>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">محدد:</strong> «أحفظ جزء عم» أفضل من «أحفظ القرآن»</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">قابل للقياس:</strong> «٣ صفحات في الأسبوع»</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">واقعي:</strong> يناسب وقتك وقدراتك الحالية</div>
+        <div style="background:var(--purplel);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--purple)">بتوكل على الله:</strong> «بعون الله سأصل لهدفي»</div>
+      </div></div>
+    <div class="actb"><div class="abh">🗺️ لوحة أهدافي</div>
+      <div class="abb">
+        <div class="ilbl">🕌 هدفي الديني:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أحفظ جزء عم">
+        <div class="ilbl" style="margin-top:6px">📚 هدفي التعليمي:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أكون الأول في الرياضيات">
+        <div class="ilbl" style="margin-top:6px">💪 هدفي الشخصي:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="مثال: أتعلم السباحة">
+        <div class="ilbl" style="margin-top:6px">خطوتي الأولى هذا الأسبوع:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="ما الذي ستفعله غداً؟">
+        <div class="sbn" style="margin-top:10px">✦ «من جدّ وجد، ومن زرع حصد» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s2e">
+    <div class="card"><div class="ct">✅ تحديات الباب الثاني</div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المرآة</h4><p>قل كل صباح لأسبوع: «أنا مميز وهذا من فضل الله»</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الموهبة</h4><p>استخدم موهبتك في خدمة شخص آخر هذا الأسبوع</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي القرار</h4><p>طبّق مصفوفة القرار على موقف حقيقي</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الهدف</h4><p>اكتب هدفاً واحداً وضع له خطة أسبوعية</p></div></div>
+      <div class="chi" onclick="TC(this,'r2')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الاستخارة</h4><p>صلّ ركعتي الاستخارة لأي قرار تفكر فيه</p></div></div>
+      
+      <button class="ggbtn" id="gb2" onclick="OG(2)">🔒 أكمل التحديات لفتح الهدية 🎁</button>
+<div id="r2" style="display:none;margin-top:10px;padding:12px;background:var(--purplel);border-radius:9px;text-align:center;font-weight:800;color:var(--purple)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الثاني 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--purple);margin-top:12px">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg3">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h3" data-e="🏠"><div class="un">✦ الباب الثالث ✦</div><h2>بابي مع والديّ</h2><span class="ua">البر والامتنان والتواصل</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('3','a',this)">١ — ماذا فعلا؟</button>
+    <button class="sbtn" onclick="S('3','b',this)">٢ — الامتنان</button>
+    <button class="sbtn" onclick="S('3','c',this)">٣ — كيف أتكلم؟</button>
+    <button class="sbtn" onclick="S('3','d',this)">٤ — بر الوالدين</button>
+    <button class="sbtn" onclick="S('3','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s3a">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَبِالْوَالِدَيْنِ إِحْسَانًا ﴾</div><div class="as">سورة البقرة، آية ٨٣</div></div>
+    <div class="card"><div class="ct">💚 ماذا فعل والداك من أجلك؟</div>
+      <p class="ip">قبل أن تُولد، كانت أمك تحملك تسعة أشهر — تأكل لأجلك، لا تنام لأجلك، تتألم لأجلك.</p>
+      <p class="ip">حين وُلدت كنت لا تستطيع شيئاً — أطعماك، حملاك، علّماك كل شيء. كل كلمة تقولها تعلّمتها بفضلهما.</p></div>
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«رِضَا اللهِ فِي رِضَا الوَالِدَيْنِ، وَسَخَطُ اللهِ فِي سَخَطِ الوَالِدَيْنِ»</div><div class="hs">رواه الترمذي وصححه الألباني</div></div>
+    <div class="stry"><div class="sh">📖 قصة: أم موسى وتضحيتها 💚</div>
+      <div class="sb">
+        <p>أوحى الله لأم موسى أن تضع طفلها في صندوق في النيل لتنجيه من فرعون — كم كان قلبها يؤلمها!</p>
+        <p>لكن الله ردّه إليها: <strong>﴿ فَرَدَدْنَاهُ إِلَىٰ أُمِّهِ كَيْ تَقَرَّ عَيْنُهَا ﴾</strong></p>
+        <p>هكذا حب الأم — يتحمل المستحيل لأجل طفلها! 💚</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ كتاب الشكر</div>
+      <div class="abb">
+        <div class="ilbl">أجمل ٣ أشياء فعلها والداك من أجلك:</div>
+        <textarea class="inp" placeholder="١-&#10;٢-&#10;٣-"></textarea>
+        <div class="sbn" style="margin-top:10px">✦ هذا الأسبوع: افعل شيئاً جميلاً لأحد والديك بدون أن يطلب منك ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ أَنِ اشْكُرْ لِي وَلِوَالِدَيْكَ إِلَيَّ الْمَصِيرُ ﴾</div><div class="as">سورة لقمان، آية ١٤</div></div>
+    <div class="card"><div class="ct">🌸 كيف تُعبّر عن امتنانك؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالكلام:</strong> «يا أمي، شكراً على كل شيء. أحبك.»</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالتصرف:</strong> المساعدة في المنزل بدون طلب</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالدعاء:</strong> «اللهم اغفر لوالديّ وارحمهما»</div>
+        <div style="background:var(--orangel);border-radius:8px;padding:10px;border-right:4px solid #F59E0B;font-size:13px"><strong style="color:var(--orange)">بالتفوق:</strong> نجاحك هو أعظم هدية تقدمها لهما</div>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ رسالة لوالديك</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:100px" placeholder="عزيزي أبي / عزيزتي أمي...&#10;أريد أن أخبرك أن...&#10;أشكرك على...&#10;أحبك لأن..."></textarea>
+        <div class="sbn" style="margin-top:9px">✦ اطبع هذه الرسالة وأعطها لهم — ستجعلهم يبكون من الفرح ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3c">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَنْهَرْهُمَا وَقُل لَّهُمَا قَوْلًا كَرِيمًا ﴾</div><div class="as">سورة الإسراء، آية ٢٣</div></div>
+    <div class="card"><div class="ct">💬 كيف أتكلم مع والديّ؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ الصواب:</strong> «أبي، لو تكرمت... رأيي أن... هل من الممكن...»</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">❌ الخطأ:</strong> الصراخ — المقاطعة — إظهار الضيق</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ عند الرفض:</strong> «حاضر» — ثم ناقش بهدوء لاحقاً</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 سيناريو: رفضوا طلبك 🎭</div>
+      <div class="sb">
+        <p>طلبت الذهاب في رحلة فرفض أبوك.</p>
+        <p>١ — تنفّس واهدأ. ٢ — في وقت مناسب: «أبي، هل تسمح أن أشرح لك؟» ٣ — اعرض حلولاً: «يمكنني أن أتصل كل ساعة.» ٤ — إن رفض: «حاضر يا أبي.»</p>
+        <p><strong>النتيجة:</strong> ستكسب ثقته وسيوافق في المرات القادمة! 💚</p>
+      </div></div>
+    <div class="card"><div class="ct">💬 جمل أستخدمها</div>
+      <div style="display:grid;gap:6px">
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أبي / أمي، هل لدي دقيقة أتكلم معك؟»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أفهم وجهة نظرك، لكن أريد أن أشرح لك...»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«أنا لا أعارضك، فقط أريدك أن تفهمني»</div>
+        <div style="background:var(--gxl);border-radius:7px;padding:9px;font-size:12.5px">«حاضر يا أبي، سأفكر في ما قلته»</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَاخْفِضْ لَهُمَا جَنَاحَ الذُّلِّ مِنَ الرَّحْمَةِ ﴾</div><div class="as">سورة الإسراء، آية ٢٤</div></div>
+    <div class="card"><div class="ct">💎 بر الوالدين — أعظم العبادات بعد الصلاة</div>
+      <p class="ip">سأل رجل النبي ﷺ: «أي العمل أحب إلى الله؟» قال: <strong>«الصلاة على وقتها»</strong> قال: «ثم أي؟» قال: <strong>«بر الوالدين»</strong> قال: «ثم أي؟» قال: <strong>«الجهاد في سبيل الله»</strong> — متفق عليه.</p>
+      <p class="ip">بر الوالدين جاء قبل الجهاد! خدمة والديك عبادة عظيمة.</p></div>
+    <div class="stry"><div class="sh">📖 قصة: أويس القرني وبره بأمه 🌹</div>
+      <div class="sb">
+        <p>أراد أويس القرني زيارة النبي ﷺ — لكن أمه كانت مريضة فبقي يخدمها.</p>
+        <p>قال النبي ﷺ لعمر وعلي: <strong>«يأتيكم رجل من اليمن يقال له أويس، لا يدع لله بخير إلا أعطاه إياه»</strong></p>
+        <p>بر الأم رفع مقامه أعلى من كثيرين ممن رأوا النبي ﷺ! 🌹</p>
+      </div></div>
+    <div class="actb"><div class="abh">📓 مفكرة البر الأسبوعية</div>
+      <div class="abb">
+        <div class="ilbl">اكتب ٣ أشياء ستفعلها لوالديك هذا الأسبوع:</div>
+        <input class="inp" style="min-height:auto" type="text" placeholder="١ — ">
+        <input class="inp" style="min-height:auto;margin-top:6px" type="text" placeholder="٢ — ">
+        <input class="inp" style="min-height:auto;margin-top:6px" type="text" placeholder="٣ — ">
+        <div class="sbn" style="margin-top:10px">✦ قلها الآن: «اللهم اغفر لوالديّ وارحمهما» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s3e">
+    <div class="card"><div class="ct">✅ تحديات الباب الثالث</div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي المفاجأة</h4><p>افعل شيئاً جميلاً لأحد والديك بدون أن يطلب منك</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الدعاء</h4><p>ادعُ لوالديك بعد كل صلاة هذا الأسبوع</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الرسالة</h4><p>اكتب رسالة امتنان لأحد والديك وأعطها له</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الحوار</h4><p>تحدّث مع أحد والديك ١٠ دقائق بدون تليفون</p></div></div>
+      <div class="chi" onclick="TC(this,'r3')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الخدمة</h4><p>ساعد في المنزل بدون أن يُطلب منك ٣ أيام</p></div></div>
+      
+      <button class="ggbtn" id="gb3" onclick="OG(3)">🔒 أكمل التحديات لفتح الهدية 🎁</button>
+<div id="r3" style="display:none;margin-top:10px;padding:12px;background:var(--orangel);border-radius:9px;text-align:center;font-weight:800;color:var(--orange)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الثالث 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--orange);margin-top:12px">﴿ رَّبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا ﴾</div>
+    </div>
+  </div>
+</div></div>
+<div class="page" id="pg4">
+<div class="cont">
+  <button class="bkbtn" onclick="goHome()">← الأبواب</button>
+  <div class="uh h4" data-e="🤝"><div class="un">✦ الباب الرابع ✦</div><h2>بابي مع أصدقائي</h2><span class="ua">الاختيار الصحيح وحدود العلاقات</span></div>
+  <div class="snav">
+    <button class="sbtn active" onclick="S('4','a',this)">١ — الصديق الصالح</button>
+    <button class="sbtn" onclick="S('4','b',this)">٢ — كيف أختار؟</button>
+    <button class="sbtn" onclick="S('4','c',this)">٣ — لا للاستغلال</button>
+    <button class="sbtn" onclick="S('4','d',this)">٤ — حدود العلاقات</button>
+    <button class="sbtn" onclick="S('4','e',this)">🏆 التحديات</button>
+  </div>
+
+  <div class="sc active" id="s4a">
+    <div class="had"><div class="hl">✦ حديث شريف ✦</div><div class="ht">«المَرءُ على دِينِ خَليلِهِ، فَلْيَنظُرْ أَحَدُكُم مَن يُخَالِل»</div><div class="hs">رواه أبو داود — أنت تتأثر بأصدقائك حتماً، فاختر بحكمة</div></div>
+    <div class="card"><div class="ct">🤝 لماذا الصديق مهم جداً؟</div>
+      <p class="ip">قال النبي ﷺ: «مثل الجليس الصالح والجليس السوء كحامل المسك ونافخ الكير» — متفق عليه</p>
+      <p class="ip"><strong style="color:var(--blue)">الصديق الجيد يُضيف إلى حياتك، والصديق السيئ يُنقص منها — حتى بدون أن تشعر!</strong></p></div>
+    <div class="stry"><div class="sh">📖 قصة: صداقة النبي ﷺ مع أبي بكر 💙</div>
+      <div class="sb">
+        <p>كان النبي ﷺ وأبو بكر يشتركان في نفس القيم: الصدق والأمانة والكرم — قبل الإسلام!</p>
+        <p>حين جاء الإسلام، وقف أبو بكر مع النبي في أصعب اللحظات — لأن صداقتهما كانت مبنية على الخير.</p>
+        <p><strong>الدرس:</strong> الصديق الحقيقي يكون معك في الصعب ويذكّرك بالله لا بالمعصية. 💙</p>
+      </div></div>
+    <div class="actb"><div class="abh">✋ صفات صديقي المثالي</div>
+      <div class="abb">
+        <div class="ilbl">اكتب ٥ صفات تبحث عنها:</div>
+        <textarea class="inp" placeholder="١- صادق&#10;٢- يذكّرني بالله&#10;٣-&#10;٤-&#10;٥-"></textarea>
+        <div class="sbn" style="margin-top:10px">✦ «كن الصديق الذي تريد أن تجده» ✦</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4b">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ الْأَخِلَّاءُ يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا الْمُتَّقِينَ ﴾</div><div class="as">سورة الزخرف، آية ٦٧</div></div>
+    <div class="card"><div class="ct">🔍 كيف أختار صديقي؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;border-right:4px solid var(--g3);font-size:13px"><strong style="color:var(--g1)">✅ ابحث عن:</strong> صادق — يذكّرك بالله — يسعدك — صاحب أخلاق</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;border-right:4px solid #DC2626;font-size:13px"><strong style="color:var(--red)">❌ احذر من:</strong> يشجعك على الكذب — يُبعدك عن العبادة — يضغط عليك</div>
+        <div style="background:var(--bluel);border-radius:8px;padding:10px;border-right:4px solid var(--bluea);font-size:13px"><strong style="color:var(--blue)">💡 اختبار:</strong> «هل أصبحت أفضل إنساناً بعد هذه الصداقة؟»</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 حديث: الأرواح جنود مجنّدة ✨</div>
+      <div class="sb">
+        <p>قال النبي ﷺ: «الأرواح جنود مجنّدة، فما تعارف منها ائتلف، وما تناكر منها اختلف.» — رواه البخاري</p>
+        <p><strong>إن كنت تريد أصدقاء صالحين، فكن أنت صالحاً أولاً — وستجذبهم إليك تلقائياً.</strong> 🌟</p>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4c">
+    <div class="card"><div class="ct">🛡️ كيف لا أُستغل؟</div>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">🚩 الصداقة السامة:</strong> يطلب دائماً ولا يُعطي — يُشعرك بالذنب حين ترفض — لا يحترم «لا»</div>
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">💚 الصداقة الحقيقية:</strong> يحترم رفضك — يسعدك بدون مقابل — يذكّرك بالله</div>
+      </div></div>
+    <div class="stry"><div class="sh">📖 سيناريو: ضغط الأقران 🎭</div>
+      <div class="sb">
+        <p>قال لك صديقك: «كلنا سنغش في الامتحان، إن لم تشارك ستخون الجماعة!»</p>
+        <p>١ — لا تتسرع. ٢ — تذكّر: «من يضغط عليك للخطأ ليس صديقاً حقيقياً.» ٣ — قل بثقة: «أنا لن أغش، وهذا قراري.» ٤ — ابتعد بهدوء. 💪</p>
+      </div></div>
+    <div class="card"><div class="ct">💬 جمل أقولها بثقة</div>
+      <div style="display:grid;gap:6px">
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«شكراً، لكن هذا ليس شيئاً أريد فعله»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«لي رأي مختلف وأنا أحترم رأيك»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«لا، ولست ملزماً بتفسير رفضي»</div>
+        <div style="background:var(--bluel);border-radius:7px;padding:9px;font-size:12.5px">«الصداقة الحقيقية لا تتطلب مخالفة قيمي»</div>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4d">
+    <div class="ayah"><div class="al">✦ آية كريمة ✦</div><div class="at">﴿ وَلَا تَقْرَبُوا الزِّنَا إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا ﴾</div><div class="as">سورة الإسراء، آية ٣٢ — الوقاية خير من العلاج</div></div>
+    <div class="card"><div class="ct">⚖️ حدود العلاقات — من سن ١١ سنوات</div>
+      <p class="ip">الإسلام لم يُحرّم العلاقات الطبيعية — بل وضع حدوداً تحميك وتحمي الآخرين.</p>
+      <div style="display:grid;gap:7px;margin-top:8px">
+        <div style="background:var(--gxl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--g1)">✅ مسموح:</strong> التعامل الطبيعي في المدرسة — التعاون — الاحترام المتبادل</div>
+        <div style="background:var(--redl);border-radius:8px;padding:10px;font-size:13px"><strong style="color:var(--red)">⚠️ احذر:</strong> الخلوة — العلاقة العاطفية السرية — التعلق قبل الزواج</div>
+      </div>
+      <div class="wb" style="margin-top:10px">💡 <strong>لماذا هذه الحدود؟</strong> ليست عقاباً بل حماية لقلبك من الألم.</div></div>
+    <div class="stry"><div class="sh">📖 درس: الوقاية خير من العلاج 🛡️</div>
+      <div class="sb">
+        <p>قال الله: «لا تقربوا» — لم يقل «لا تفعلوا» فقط، بل لا تقتربوا من الطريق المؤدي إليه!</p>
+        <p><strong>القاعدة الذهبية:</strong> كل شيء تخجل أن يراك فيه والداك أو الله — لا تفعله. 🌟</p>
+      </div></div>
+    <div class="actb"><div class="abh">✍️ قواعدي في التواصل الاجتماعي</div>
+      <div class="abb">
+        <textarea class="inp" style="min-height:80px" placeholder="مثال:&#10;— لن أرسل رسائل خاصة لشخص لا أعرفه&#10;— لن أشارك محتوى يُخجل والديّ&#10;— سأضع هاتفي في غرفة المعيشة..."></textarea>
+      </div></div>
+  </div>
+
+  <div class="sc" id="s4e">
+    <div class="card"><div class="ct">✅ تحديات الباب الرابع</div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الاختيار</h4><p>حدّد ٣ صفات تبحث عنها في صديقك وطبّقها</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي «لا»</h4><p>قل «لا» لطلب خاطئ هذا الأسبوع بثقة وأدب</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي الصداقة</h4><p>افعل شيئاً جميلاً لصديقك بدون أن تطلب مقابلاً</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي القواعد</h4><p>اكتب قواعدك في التواصل الاجتماعي والتزم بها</p></div></div>
+      <div class="chi" onclick="TC(this,'r4')"><div class="chb"></div><div class="cht"><h4>⭐ تحدي النموذج</h4><p>كن الصديق الذي تريد أن تجده — طبّقه هذا الأسبوع</p></div></div>
+      
+      <button class="ggbtn" id="gb4" onclick="OG(4)">🔒 أكمل التحديات لفتح الهدية 🎁</button>
+<div id="r4" style="display:none;margin-top:10px;padding:12px;background:var(--bluel);border-radius:9px;text-align:center;font-weight:800;color:var(--blue)"></div>
+    </div>
+    <div class="crt"><h3>🏆 شهادة إتمام الباب الرابع 🏆</h3>
+      <div class="crf" contenteditable="true">اكتب اسمك هنا</div>
+      <div style="font-family:'Amiri',serif;font-size:14px;color:var(--blue);margin-top:12px">﴿ الْأَخِلَّاءُ يَوْمَئِذٍ بَعْضُهُمْ لِبَعْضٍ عَدُوٌّ إِلَّا الْمُتَّقِينَ ﴾</div>
+    </div>
+  </div>
+</div></div>
+<footer class="ftb">
+  <div class="fq">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</div>
+  <p>برنامج أبوابي الأربعة — التربية الإسلامية المتكاملة للأطفال</p>
+  <p>استناداً على منهج أهل السنة والجماعة 💚</p>
+</footer>
+
+<style>
+html{overflow-y:scroll !important;}
+body{overflow-y:auto !important;}
+body.no-scroll{overflow:hidden !important;}
+.gov{position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;background:#000;display:none;flex-direction:column;overflow:hidden;}
+.gov.active{display:flex;}
+.gcbar{background:linear-gradient(90deg,#1B4332,#2D6A4F);padding:10px 16px;display:flex;justify-content:space-between;align-items:center;flex-shrink:0;}
+.gcbar .gtitle{color:#FFD700;font-weight:900;font-size:14px;}
+.gcbar button{background:rgba(255,255,255,0.15);border:1.5px solid rgba(255,255,255,0.3);color:white;padding:6px 14px;border-radius:18px;font-family:"Tajawal",sans-serif;font-weight:700;font-size:13px;cursor:pointer;}
+.gfrm{flex:1;overflow:auto;display:flex;justify-content:center;padding:8px 0;}
+.ggbtn{display:block;width:100%;padding:16px;margin-top:14px;background:rgba(255,255,255,0.08);color:rgba(255,255,255,0.5);border:2px dashed rgba(255,255,255,0.25);border-radius:14px;font-family:"Tajawal",sans-serif;font-weight:800;font-size:15px;cursor:pointer;transition:all .3s;}
+.ggbtn.unlocked{background:linear-gradient(135deg,#FFD700,#C9A84C) !important;color:#1B4332 !important;border:none !important;box-shadow:0 6px 24px rgba(255,215,0,0.4);animation:gp 2s infinite;}
+@keyframes gp{0%,100%{box-shadow:0 6px 20px rgba(255,215,0,0.35);}50%{box-shadow:0 8px 32px rgba(255,215,0,0.65);}}
+</style>
+
+<div class="gov" id="gov1">
+  <div class="gcbar">
+    <span class="gtitle">🎮 هدية الباب الأول — مغامرات ياسين 🌙</span>
+    <button onclick="CG(1)">✕ إغلاق</button>
+  </div>
+  <div class="gfrm">
+    <div style="max-width:820px;width:100%;min-height:100%">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Tajawal',sans-serif;background:#0a0e1a;overflow:hidden;}
+#gameWrap{position:relative;width:100%;max-width:800px;margin:0 auto;background:#000;border-radius:16px;overflow:hidden;box-shadow:0 0 40px rgba(82,183,136,0.3);}
+canvas{display:block;width:100%;background:#87CEEB;}
+#hud{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:10px 16px;z-index:10;pointer-events:none;}
+.hud-box{background:rgba(0,0,0,0.5);border:2px solid #FFD700;border-radius:12px;padding:6px 14px;color:#FFD700;font-weight:900;font-size:15px;display:flex;align-items:center;gap:6px;}
+#levelName{position:absolute;top:50px;left:0;right:0;text-align:center;color:white;font-weight:900;font-size:18px;text-shadow:0 2px 8px rgba(0,0,0,0.8);z-index:10;pointer-events:none;opacity:0;transition:opacity 0.5s;}
+#levelName.show{opacity:1;}
+#startScreen,#winScreen,#loseScreen,#levelCompleteScreen{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#1B4332,#2D6A4F);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:20px;z-index:20;}
+#loseScreen,#levelCompleteScreen{display:none;}
+.bigTitle{font-size:clamp(24px,6vw,38px);font-weight:900;color:#FFD700;margin-bottom:10px;text-shadow:0 0 20px rgba(255,215,0,0.5);}
+.subTitle{font-size:14px;opacity:0.85;margin-bottom:24px;max-width:400px;}
+.gameBtn{background:linear-gradient(135deg,#FFD700,#E8B800);color:#1B4332;border:none;padding:14px 36px;border-radius:30px;font-family:'Tajawal',sans-serif;font-weight:900;font-size:16px;cursor:pointer;box-shadow:0 6px 20px rgba(255,215,0,0.4);transition:transform 0.2s;margin:6px;}
+.gameBtn:hover{transform:scale(1.05);}
+.gameBtn.secondary{background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3);}
+#controls{position:absolute;bottom:16px;left:0;right:0;display:flex;justify-content:space-between;padding:0 16px;z-index:10;}
+.ctrlBtn{width:62px;height:62px;background:rgba(255,255,255,0.25);border:2px solid rgba(255,255,255,0.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;color:white;-webkit-tap-highlight-color:transparent;user-select:none;touch-action:none;}
+.ctrlBtn:active{background:rgba(255,255,255,0.5);}
+#moveBtns{display:flex;gap:10px;}
+.starsDisplay{display:flex;gap:4px;margin:14px 0;}
+.starsDisplay span{font-size:32px;}
+@media (min-width:768px){#controls{display:none;}}
+</style>
+      
+<div id="gameWrap">
+<canvas id="game"></canvas>
+
+<div id="hud">
+  <div class="hud-box">⭐ <span id="starCount">0</span>/<span id="starTotal">0</span></div>
+  <div class="hud-box">🕌 <span id="levelNum">1</span>/5</div>
+  <div class="hud-box">❤️ <span id="livesCount">3</span></div>
+</div>
+<div id="levelName"></div>
+
+<div id="startScreen">
+  <div style="font-size:60px;margin-bottom:10px">🌙</div>
+  <div class="bigTitle">مغامرات ياسين</div>
+  <div class="subTitle">ساعد ياسين في رحلته عبر خمس بيئات مختلفة، اجمع نجوم النور، وتجنّب العقبات لتصل للعلم في كل مستوى!</div>
+  <button class="gameBtn" onclick="g1_startGame()">▶ ابدأ المغامرة</button>
+  <div style="margin-top:20px;font-size:12px;opacity:0.7">على الكومبيوتر: الأسهم للحركة + Space للقفز<br>على الموبايل: استخدم الأزرار في الأسفل</div>
+</div>
+
+<div id="winScreen" style="display:none">
+  <div style="font-size:60px;margin-bottom:10px">🏆</div>
+  <div class="bigTitle">ماشاءالله! أكملت المغامرة!</div>
+  <div class="subTitle">جمعت كل النجوم وأنهيت رحلة ياسين بنجاح. بارك الله فيك!</div>
+  <div class="starsDisplay">⭐⭐⭐⭐⭐</div>
+  <button class="gameBtn" onclick="g1_restartGame()">🔄 العب مرة أخرى</button>
+</div>
+
+<div id="levelCompleteScreen">
+  <div style="font-size:60px;margin-bottom:10px">🎉</div>
+  <div class="bigTitle" id="levelCompleteTitle">أحسنت!</div>
+  <div class="subTitle" id="levelCompleteSub"></div>
+  <button class="gameBtn" onclick="g1_nextLevel()">التالي ←</button>
+</div>
+
+<div id="loseScreen">
+  <div style="font-size:60px;margin-bottom:10px">💪</div>
+  <div class="bigTitle">حاول مرة أخرى!</div>
+  <div class="subTitle">لا بأس، حتى الأبطال يسقطون قبل أن ينجحوا. توكّل على الله وحاول من جديد!</div>
+  <button class="gameBtn" onclick="g1_retryLevel()">🔄 إعادة المحاولة</button>
+</div>
+
+<div id="controls">
+  <div id="moveBtns">
+    <div class="ctrlBtn" id="leftBtn">◀</div>
+    <div class="ctrlBtn" id="rightBtn">▶</div>
+  </div>
+  <div class="ctrlBtn" id="jumpBtn">⬆</div>
+</div>
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="gov" id="gov2">
+  <div class="gcbar">
+    <span class="gtitle">🎮 هدية الباب الثاني — نجوم الثقة ✨</span>
+    <button onclick="CG(2)">✕ إغلاق</button>
+  </div>
+  <div class="gfrm">
+    <div style="max-width:820px;width:100%;min-height:100%">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{font-family:'Tajawal',sans-serif;background:#0a0a1a;overflow:hidden;user-select:none;}
+#gameWrap{position:relative;width:100%;max-width:480px;margin:0 auto;background:linear-gradient(160deg,#3D1F6E,#5B2D8E);border-radius:20px;overflow:hidden;min-height:100vh;max-height:850px;display:flex;flex-direction:column;}
+#hud{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;}
+.hud-box{background:rgba(255,255,255,0.12);border:2px solid rgba(255,215,0,0.4);border-radius:14px;padding:8px 14px;color:#FFD700;font-weight:900;font-size:14px;}
+#boardWrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;}
+#goalDisplay{color:white;font-weight:800;font-size:14px;margin-bottom:10px;text-align:center;background:rgba(0,0,0,0.2);padding:8px 16px;border-radius:12px;}
+#board{display:grid;gap:4px;background:rgba(0,0,0,0.25);padding:8px;border-radius:16px;touch-action:none;}
+.cell{width:48px;height:48px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:26px;cursor:pointer;transition:transform 0.15s;position:relative;}
+.cell.selected{transform:scale(1.12);box-shadow:0 0 0 3px #FFD700;}
+.cell.matching{animation:pop 0.4s ease-out forwards;}
+.cell.falling{transition:transform 0.25s ease-in;}
+@keyframes pop{0%{transform:scale(1);}50%{transform:scale(1.3);opacity:0.7;}100%{transform:scale(0);opacity:0;}}
+@keyframes sparkle{0%{opacity:1;transform:scale(0.5) translateY(0);}100%{opacity:0;transform:scale(1.5) translateY(-30px);}}
+.sparkle{position:absolute;pointer-events:none;font-size:20px;animation:sparkle 0.6s ease-out forwards;z-index:5;}
+#startScreen,#winScreen,#loseScreen,#levelCompleteScreen{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(160deg,#3D1F6E,#5B2D8E);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:24px;z-index:30;}
+#winScreen,#loseScreen,#levelCompleteScreen{display:none;}
+.bigTitle{font-size:clamp(22px,6vw,32px);font-weight:900;color:#FFD700;margin-bottom:10px;text-shadow:0 0 20px rgba(255,215,0,0.5);}
+.subTitle{font-size:13.5px;opacity:0.9;margin-bottom:22px;max-width:340px;line-height:1.7;}
+.gameBtn{background:linear-gradient(135deg,#FFD700,#E8B800);color:#3D1F6E;border:none;padding:14px 32px;border-radius:30px;font-family:'Tajawal',sans-serif;font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 6px 20px rgba(255,215,0,0.4);margin:6px;}
+#movesBar{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.movePip{width:8px;height:24px;border-radius:4px;background:rgba(255,255,255,0.2);}
+.movePip.used{background:#FF6B6B;}
+.comboPopup{position:absolute;color:#FFD700;font-weight:900;font-size:18px;pointer-events:none;animation:comboFloat 0.8s ease-out forwards;z-index:6;text-shadow:0 2px 6px rgba(0,0,0,0.6);}
+@keyframes comboFloat{0%{opacity:1;transform:translateY(0) scale(0.8);}100%{opacity:0;transform:translateY(-50px) scale(1.3);}}
+</style>
+      
+<div id="gameWrap">
+<div id="hud">
+  <div class="hud-box">🏆 <span id="scoreDisplay">0</span></div>
+  <div class="hud-box">⭐ <span id="levelDisplay">1</span>/5</div>
+  <div class="hud-box">🎯 <span id="movesDisplay">20</span></div>
+</div>
+
+<div id="boardWrap">
+  <div id="goalDisplay"></div>
+  <div id="board"></div>
+</div>
+
+<div id="startScreen">
+  <div style="font-size:54px;margin-bottom:8px">✨</div>
+  <div class="bigTitle">نجوم الثقة</div>
+  <div class="subTitle">اجمع الرموز المتطابقة لتفجّر سلاسل من النجوم والأهلّة! كل مستوى أصعب من السابق — هل عندك الثقة لتصل للمستوى الخامس؟</div>
+  <button class="gameBtn" onclick="g2_startGame()">▶ ابدأ التحدي</button>
+  <div style="margin-top:16px;font-size:11.5px;opacity:0.7">اضغط على رمزين متجاورين لتبديلهما وتكوين ٣ متطابقة أو أكثر</div>
+</div>
+
+<div id="winScreen">
+  <div style="font-size:54px;margin-bottom:8px">👑</div>
+  <div class="bigTitle">أنت بطل الثقة!</div>
+  <div class="subTitle">أكملت كل المستويات الخمسة! هذا يعكس بالضبط ما تعلمته: الثقة تُبنى خطوة بخطوة، ونتيجة كل تحدٍّ صغير تجاوزته.</div>
+  <div id="finalScoreDisplay" style="color:#FFD700;font-size:22px;font-weight:900;margin-bottom:16px"></div>
+  <button class="gameBtn" onclick="g2_restartGame()">🔄 العب مرة أخرى</button>
+</div>
+
+<div id="levelCompleteScreen">
+  <div style="font-size:54px;margin-bottom:8px">🎉</div>
+  <div class="bigTitle">أحسنت!</div>
+  <div class="subTitle" id="levelCompleteSub"></div>
+  <button class="gameBtn" onclick="g2_nextLevel()">المستوى التالي ←</button>
+</div>
+
+<div id="loseScreen">
+  <div style="font-size:54px;margin-bottom:8px">💪</div>
+  <div class="bigTitle">لم تكتمل المهمة بعد</div>
+  <div class="subTitle">الثقة تعني المحاولة من جديد بعد كل عقبة. حاول مرة أخرى!</div>
+  <button class="gameBtn" onclick="g2_retryLevel()">🔄 إعادة المحاولة</button>
+</div>
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="gov" id="gov3">
+  <div class="gcbar">
+    <span class="gtitle">🎮 هدية الباب الثالث — برج الحكمة 🧠</span>
+    <button onclick="CG(3)">✕ إغلاق</button>
+  </div>
+  <div class="gfrm">
+    <div style="max-width:820px;width:100%;min-height:100%">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{font-family:'Tajawal',sans-serif;background:#0a0a0a;overflow:hidden;user-select:none;}
+#gameWrap{position:relative;width:100%;max-width:480px;margin:0 auto;background:linear-gradient(160deg,#1a1410,#3D2817);border-radius:20px;overflow:hidden;min-height:100vh;max-height:850px;display:flex;flex-direction:column;}
+#hud{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;}
+.hud-box{background:rgba(255,255,255,0.1);border:2px solid rgba(201,168,76,0.4);border-radius:14px;padding:8px 14px;color:#C9A84C;font-weight:900;font-size:13px;text-align:center;}
+.hud-box .lbl{font-size:9px;opacity:0.7;display:block;margin-bottom:2px;}
+#boardWrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;touch-action:none;}
+#goalDisplay{color:white;font-weight:800;font-size:13.5px;margin-bottom:12px;text-align:center;background:rgba(0,0,0,0.25);padding:8px 16px;border-radius:12px;}
+#board{position:relative;background:rgba(0,0,0,0.35);border-radius:14px;padding:8px;}
+.gridBg{position:absolute;border-radius:8px;background:rgba(255,255,255,0.06);}
+.tile{position:absolute;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:900;transition:left 0.12s ease,top 0.12s ease,transform 0.12s ease;box-shadow:0 2px 6px rgba(0,0,0,0.3);}
+.tile.new{animation:tileIn 0.2s ease;}
+.tile.merged{animation:tileMerge 0.2s ease;}
+@keyframes tileIn{0%{transform:scale(0);}100%{transform:scale(1);}}
+@keyframes tileMerge{0%{transform:scale(1);}50%{transform:scale(1.15);}100%{transform:scale(1);}}
+#startScreen,#winScreen,#loseScreen,#levelCompleteScreen{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(160deg,#1a1410,#3D2817);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:24px;z-index:30;}
+#winScreen,#loseScreen,#levelCompleteScreen{display:none;}
+.bigTitle{font-size:clamp(22px,6vw,30px);font-weight:900;color:#C9A84C;margin-bottom:10px;}
+.subTitle{font-size:13px;opacity:0.9;margin-bottom:22px;max-width:330px;line-height:1.7;}
+.gameBtn{background:linear-gradient(135deg,#C9A84C,#A8863A);color:#1a1410;border:none;padding:14px 32px;border-radius:30px;font-family:'Tajawal',sans-serif;font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 6px 20px rgba(201,168,76,0.4);margin:6px;}
+.gameBtn.secondary{background:rgba(255,255,255,0.15);color:white;}
+#swipeHint{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:rgba(255,255,255,0.5);font-size:11.5px;}
+</style>
+      
+<div id="gameWrap">
+<div id="hud">
+  <div class="hud-box"><span class="lbl">المستوى</span><span id="levelDisplay">1</span>/5</div>
+  <div class="hud-box"><span class="lbl">النقاط</span><span id="scoreDisplay">0</span></div>
+  <div class="hud-box"><span class="lbl">أفضل نتيجة</span><span id="bestDisplay">0</span></div>
+</div>
+
+<div id="boardWrap">
+  <div id="goalDisplay"></div>
+  <div id="board"></div>
+</div>
+<div id="swipeHint">↔️ ↕️ اسحب لتحريك القطع — أو استخدم الأسهم</div>
+
+<div id="startScreen">
+  <div style="font-size:54px;margin-bottom:8px">🧠</div>
+  <div class="bigTitle">برج الحكمة</div>
+  <div class="subTitle">ادمج الأرقام المتطابقة لتبني برجاً عالياً من الحكمة! اسحب في أي اتجاه لتحريك كل القطع، وكل قطعتين متشابهتين تلتقيان تتحدان في رقم أكبر.</div>
+  <button class="gameBtn" onclick="g3_startGame()">▶ ابدأ التحدي</button>
+</div>
+
+<div id="winScreen">
+  <div style="font-size:54px;margin-bottom:8px">🏆</div>
+  <div class="bigTitle">أنت سيد الحكمة!</div>
+  <div class="subTitle">أكملت كل المستويات الخمسة بذكاء وتركيز. هذا بالضبط ما تعلمته في هذا الباب: التفكير الجيد يقودك لقرارات صحيحة!</div>
+  <button class="gameBtn" onclick="g3_restartGame()">🔄 العب مرة أخرى</button>
+</div>
+
+<div id="levelCompleteScreen">
+  <div style="font-size:54px;margin-bottom:8px">🎉</div>
+  <div class="bigTitle">أحسنت!</div>
+  <div class="subTitle" id="levelCompleteSub"></div>
+  <button class="gameBtn" onclick="g3_nextLevel()">المستوى التالي ←</button>
+</div>
+
+<div id="loseScreen">
+  <div style="font-size:54px;margin-bottom:8px">💭</div>
+  <div class="bigTitle">امتلأ البرج!</div>
+  <div class="subTitle">لا بأس، التفكير الجيد يحتاج للتدريب. حاول مرة أخرى بحكمة أكبر!</div>
+  <button class="gameBtn" onclick="g3_retryLevel()">🔄 إعادة المحاولة</button>
+</div>
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+
+<div class="gov" id="gov4">
+  <div class="gcbar">
+    <span class="gtitle">🎮 هدية الباب الرابع — ذاكرة الأصدقاء 🧩</span>
+    <button onclick="CG(4)">✕ إغلاق</button>
+  </div>
+  <div class="gfrm">
+    <div style="max-width:820px;width:100%;min-height:100%">
+      <style>
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700;800;900&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+body{font-family:'Tajawal',sans-serif;background:#0a0a1a;overflow:hidden;user-select:none;}
+#gameWrap{position:relative;width:100%;max-width:480px;margin:0 auto;background:linear-gradient(160deg,#0A3160,#1B4D8E);border-radius:20px;overflow:hidden;min-height:100vh;max-height:850px;display:flex;flex-direction:column;}
+#hud{display:flex;justify-content:space-between;align-items:center;padding:14px 16px;}
+.hud-box{background:rgba(255,255,255,0.12);border:2px solid rgba(58,134,255,0.5);border-radius:14px;padding:8px 14px;color:#93C5FD;font-weight:900;font-size:13px;text-align:center;}
+.hud-box .lbl{font-size:9px;opacity:0.7;display:block;margin-bottom:2px;}
+#boardWrap{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px;}
+#goalDisplay{color:white;font-weight:800;font-size:13.5px;margin-bottom:12px;text-align:center;background:rgba(0,0,0,0.2);padding:8px 16px;border-radius:12px;}
+#board{display:grid;gap:6px;perspective:600px;}
+.card{position:relative;cursor:pointer;border-radius:10px;transform-style:preserve-3d;transition:transform 0.5s;}
+.card.flipped{transform:rotateY(180deg);}
+.card.matched{opacity:0.4;cursor:default;}
+.cardFace{position:absolute;width:100%;height:100%;border-radius:10px;display:flex;align-items:center;justify-content:center;backface-visibility:hidden;box-shadow:0 3px 8px rgba(0,0,0,0.3);}
+.cardBack{background:linear-gradient(135deg,#3A86FF,#1B4D8E);font-size:22px;color:rgba(255,255,255,0.4);}
+.cardFront{background:linear-gradient(135deg,#EBF3FF,#FFFFFF);transform:rotateY(180deg);}
+#startScreen,#winScreen,#levelCompleteScreen,#loseScreen{position:absolute;top:0;left:0;right:0;bottom:0;background:linear-gradient(160deg,#0A3160,#1B4D8E);display:flex;flex-direction:column;align-items:center;justify-content:center;color:white;text-align:center;padding:24px;z-index:30;}
+#winScreen,#levelCompleteScreen,#loseScreen{display:none;}
+.bigTitle{font-size:clamp(22px,6vw,30px);font-weight:900;color:#93C5FD;margin-bottom:10px;}
+.subTitle{font-size:13px;opacity:0.9;margin-bottom:22px;max-width:330px;line-height:1.7;}
+.gameBtn{background:linear-gradient(135deg,#3A86FF,#1B4D8E);color:white;border:none;padding:14px 32px;border-radius:30px;font-family:'Tajawal',sans-serif;font-weight:900;font-size:15px;cursor:pointer;box-shadow:0 6px 20px rgba(58,134,255,0.4);margin:6px;}
+#timerBar{width:100%;height:6px;background:rgba(255,255,255,0.15);border-radius:3px;overflow:hidden;margin-bottom:10px;}
+#timerFill{height:100%;background:linear-gradient(90deg,#93C5FD,#3A86FF);transition:width 1s linear;}
+</style>
+      
+<div id="gameWrap">
+<div id="hud">
+  <div class="hud-box"><span class="lbl">المستوى</span><span id="levelDisplay">1</span>/5</div>
+  <div class="hud-box"><span class="lbl">المحاولات</span><span id="movesDisplay">0</span></div>
+  <div class="hud-box"><span class="lbl">الوقت</span><span id="timeDisplay">60</span>ث</div>
+</div>
+
+<div id="boardWrap">
+  <div id="goalDisplay"></div>
+  <div id="timerBar"><div id="timerFill" style="width:100%"></div></div>
+  <div id="board"></div>
+</div>
+
+<div id="startScreen">
+  <div style="font-size:54px;margin-bottom:8px">🧩</div>
+  <div class="bigTitle">ذاكرة الأصدقاء</div>
+  <div class="subTitle">اقلب البطاقات لتجد الأزواج المتطابقة قبل نفاد الوقت! كل مستوى يزيد عدد البطاقات تحدياً لذاكرتك وتركيزك.</div>
+  <button class="gameBtn" onclick="g4_startGame()">▶ ابدأ اللعب</button>
+</div>
+
+<div id="winScreen">
+  <div style="font-size:54px;margin-bottom:8px">🏆</div>
+  <div class="bigTitle">ذاكرة بطل!</div>
+  <div class="subTitle">أكملت كل المستويات الخمسة! تذكّر: كما تذكّرت موضع كل بطاقة، تذكّر دائماً صفات الصديق الصالح الذي تبحث عنه.</div>
+  <button class="gameBtn" onclick="g4_restartGame()">🔄 العب مرة أخرى</button>
+</div>
+
+<div id="levelCompleteScreen">
+  <div style="font-size:54px;margin-bottom:8px">🎉</div>
+  <div class="bigTitle">أحسنت!</div>
+  <div class="subTitle" id="levelCompleteSub"></div>
+  <button class="gameBtn" onclick="g4_nextLevel()">المستوى التالي ←</button>
+</div>
+
+<div id="loseScreen">
+  <div style="font-size:54px;margin-bottom:8px">⏰</div>
+  <div class="bigTitle">انتهى الوقت!</div>
+  <div class="subTitle">لا بأس، التركيز يحتاج تدريباً. حاول مرة أخرى!</div>
+  <button class="gameBtn" onclick="g4_retryLevel()">🔄 إعادة المحاولة</button>
+</div>
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+<script>;(function(){
+
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+let W = 800, H = 450;
+function resizeCanvas(){
+  const wrap = document.getElementById('gameWrap');
+  const ratio = 450/800;
+  W = wrap.clientWidth;
+  H = W * ratio;
+  canvas.width = W;
+  canvas.height = H;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+const SCALE = () => W/800;
+
+// ═══════════ GAME STATE ═══════════
+let currentLevel = 0;
+let totalStars = 0;
+let collectedStars = 0;
+let lives = 3;
+let gameRunning = false;
+let keys = {};
+let cameraX = 0;
+
+const GRAVITY = 0.65;
+const JUMP_FORCE = -12.5;
+const MOVE_SPEED = 4.2;
+
+// Player object
+const player = {
+  x: 50, y: 300, w: 34, h: 42,
+  vx: 0, vy: 0,
+  onGround: false,
+  facing: 1,
+  animFrame: 0,
+  animTimer: 0,
+  invincible: 0,
+  dead: false
+};
+
+// ═══════════ LEVEL DEFINITIONS ═══════════
+// Each level: theme colors, platforms, obstacles, stars, goal position
+function buildLevels(){
+return [
+  // LEVEL 1: المدينة المنورة (City)
+  {
+    name: "المدينة المنورة",
+    emoji: "🕌",
+    bg: ['#FFE8B8','#FFD580'],
+    groundColor: '#D4A857',
+    platformColor: '#E8C474',
+    decorColor: '#C9A84C',
+    width: 2400,
+    groundY: 380,
+    platforms: [
+      {x:0,y:380,w:2400,h:70},
+      {x:300,y:300,w:120,h:20},
+      {x:550,y:250,w:100,h:20},
+      {x:750,y:320,w:140,h:20},
+      {x:1000,y:280,w:100,h:20},
+      {x:1200,y:340,w:120,h:20},
+      {x:1450,y:260,w:100,h:20},
+      {x:1650,y:320,w:150,h:20},
+      {x:1900,y:280,w:100,h:20},
+      {x:2100,y:340,w:150,h:20},
+    ],
+    obstacles: [
+      {type:'box',x:450,y:340,w:40,h:40},
+      {type:'box',x:880,y:340,w:40,h:40},
+      {type:'box',x:1350,y:340,w:40,h:40},
+      {type:'box',x:1800,y:340,w:40,h:40},
+      {type:'box',x:2050,y:340,w:40,h:40},
+    ],
+    stars: [
+      {x:360,y:260,collected:false},
+      {x:600,y:210,collected:false},
+      {x:1050,y:240,collected:false},
+      {x:1500,y:220,collected:false},
+      {x:1950,y:240,collected:false},
+    ],
+    goalX: 2300, goalY: 280,
+    decorType: 'dome'
+  },
+  // LEVEL 2: الصحراء (Desert)
+  {
+    name: "الصحراء",
+    emoji: "🏜️",
+    bg: ['#FFD89E','#FFA94D'],
+    groundColor: '#D4934A',
+    platformColor: '#E0A85C',
+    decorColor: '#C9783C',
+    width: 2400,
+    groundY: 380,
+    platforms: [
+      {x:0,y:380,w:600,h:70},
+      {x:700,y:380,w:300,h:70},
+      {x:1100,y:380,w:250,h:70},
+      {x:1450,y:380,w:350,h:70},
+      {x:1900,y:380,w:500,h:70},
+      {x:400,y:300,w:100,h:20},
+      {x:850,y:280,w:100,h:20},
+      {x:1250,y:300,w:100,h:20},
+      {x:1650,y:260,w:120,h:20},
+      {x:2050,y:300,w:100,h:20},
+    ],
+    obstacles: [
+      {type:'rock',x:650,y:340,w:50,h:40},
+      {type:'gap',x:600,y:380,w:100,h:70},
+      {type:'gap',x:1000,y:380,w:100,h:70},
+      {type:'gap',x:1350,y:380,w:100,h:70},
+      {type:'gap',x:1800,y:380,w:100,h:70},
+      {type:'rock',x:1150,y:340,w:50,h:40},
+    ],
+    stars: [
+      {x:440,y:260,collected:false},
+      {x:890,y:240,collected:false},
+      {x:1290,y:260,collected:false},
+      {x:1700,y:220,collected:false},
+      {x:2100,y:260,collected:false},
+    ],
+    goalX: 2300, goalY: 280,
+    decorType: 'cactus'
+  },
+  // LEVEL 3: البستان (Garden)
+  {
+    name: "البستان",
+    emoji: "🌳",
+    bg: ['#B8E8D0','#7FD8A8'],
+    groundColor: '#5C9E6F',
+    platformColor: '#7FB88C',
+    decorColor: '#3D7A4C',
+    width: 2400,
+    groundY: 380,
+    platforms: [
+      {x:0,y:380,w:2400,h:70},
+      {x:250,y:320,w:80,h:20},
+      {x:400,y:260,w:80,h:20},
+      {x:550,y:320,w:80,h:20},
+      {x:750,y:280,w:100,h:20},
+      {x:950,y:220,w:80,h:20},
+      {x:1100,y:300,w:100,h:20},
+      {x:1300,y:250,w:90,h:20},
+      {x:1500,y:310,w:100,h:20},
+      {x:1700,y:240,w:90,h:20},
+      {x:1900,y:300,w:100,h:20},
+      {x:2100,y:250,w:120,h:20},
+    ],
+    obstacles: [
+      {type:'pit',x:600,y:380,w:80,h:70},
+      {type:'branch',x:870,y:340,w:60,h:25},
+      {type:'pit',x:1200,y:380,w:80,h:70},
+      {type:'branch',x:1620,y:340,w:60,h:25},
+      {type:'pit',x:1990,y:380,w:80,h:70},
+    ],
+    stars: [
+      {x:280,y:280,collected:false},
+      {x:780,y:240,collected:false},
+      {x:1130,y:260,collected:false},
+      {x:1530,y:270,collected:false},
+      {x:2130,y:210,collected:false},
+    ],
+    goalX: 2300, goalY: 200,
+    decorType: 'tree'
+  },
+  // LEVEL 4: الجبل (Mountain)
+  {
+    name: "الجبل",
+    emoji: "⛰️",
+    bg: ['#C5D5E8','#8FA8C4'],
+    groundColor: '#6B7A8C',
+    platformColor: '#8593A3',
+    decorColor: '#4A5563',
+    width: 2400,
+    groundY: 380,
+    platforms: [
+      {x:0,y:380,w:300,h:70},
+      {x:380,y:340,w:80,h:20},
+      {x:520,y:300,w:80,h:20},
+      {x:660,y:260,w:80,h:20},
+      {x:800,y:220,w:90,h:20},
+      {x:950,y:280,w:90,h:20},
+      {x:1100,y:320,w:90,h:20},
+      {x:1250,y:260,w:80,h:20},
+      {x:1400,y:200,w:80,h:20},
+      {x:1550,y:260,w:90,h:20},
+      {x:1700,y:320,w:100,h:20},
+      {x:1880,y:280,w:90,h:20},
+      {x:2050,y:340,w:350,h:70},
+    ],
+    obstacles: [
+      {type:'boulder',x:600,y:265,w:45,h:35},
+      {type:'boulder',x:1050,y:285,w:45,h:35},
+      {type:'boulder',x:1480,y:265,w:45,h:35},
+      {type:'boulder',x:1830,y:285,w:45,h:35},
+    ],
+    stars: [
+      {x:400,y:300,collected:false},
+      {x:820,y:180,collected:false},
+      {x:1270,y:220,collected:false},
+      {x:1720,y:280,collected:false},
+      {x:2150,y:300,collected:false},
+    ],
+    goalX: 2300, goalY: 280,
+    decorType: 'peak'
+  },
+  // LEVEL 5: السماء (Sky) - Final level
+  {
+    name: "السماء",
+    emoji: "☁️",
+    bg: ['#7EC8E3','#4A9FD8'],
+    groundColor: '#FFFFFF',
+    platformColor: '#F0F8FF',
+    decorColor: '#E0F0FF',
+    width: 2600,
+    groundY: 380,
+    platforms: [
+      {x:0,y:380,w:250,h:70},
+      {x:330,y:330,w:90,h:25},
+      {x:500,y:280,w:90,h:25},
+      {x:670,y:330,w:90,h:25},
+      {x:840,y:240,w:90,h:25},
+      {x:1010,y:300,w:90,h:25},
+      {x:1180,y:200,w:90,h:25},
+      {x:1350,y:280,w:90,h:25},
+      {x:1520,y:230,w:90,h:25},
+      {x:1690,y:310,w:90,h:25},
+      {x:1860,y:260,w:90,h:25},
+      {x:2030,y:200,w:90,h:25},
+      {x:2200,y:280,w:90,h:25},
+      {x:2400,y:340,w:200,h:70},
+    ],
+    obstacles: [
+      {type:'cloud_gap',x:250,y:380,w:80,h:70},
+      {type:'wind',x:600,y:250,w:50,h:80},
+      {type:'cloud_gap',x:760,y:380,w:80,h:70},
+      {type:'wind',x:1100,y:200,w:50,h:80},
+      {type:'cloud_gap',x:1270,y:380,w:80,h:70},
+      {type:'wind',x:1600,y:250,w:50,h:80},
+      {type:'cloud_gap',x:1780,y:380,w:80,h:70},
+      {type:'wind',x:2120,y:220,w:50,h:80},
+      {type:'cloud_gap',x:2300,y:380,w:100,h:70},
+    ],
+    stars: [
+      {x:350,y:290,collected:false},
+      {x:860,y:200,collected:false},
+      {x:1200,y:160,collected:false},
+      {x:1710,y:270,collected:false},
+      {x:2220,y:240,collected:false},
+    ],
+    goalX: 2480, goalY: 260,
+    decorType: 'crescent'
+  }
+];
+}
+
+let LEVELS = buildLevels();
+let level = LEVELS[0];
+
+function resetLevel(idx){
+  level = JSON.parse(JSON.stringify(LEVELS[idx]));
+  player.x = 50;
+  player.y = level.groundY - player.h - 5;
+  player.vx = 0;
+  player.vy = 0;
+  player.dead = false;
+  player.invincible = 0;
+  cameraX = 0;
+  collectedStars = 0;
+  totalStars = level.stars.length;
+  document.getElementById('starTotal').innerText = totalStars;
+  document.getElementById('starCount').innerText = 0;
+  document.getElementById('levelNum').innerText = idx+1;
+  showLevelName(level.name + ' ' + level.emoji);
+}
+
+function showLevelName(text){
+  const el = document.getElementById('levelName');
+  el.innerText = text;
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'), 2200);
+}
+
+// ═══════════ INPUT ═══════════
+window.addEventListener('keydown', e => {
+  keys[e.key] = true;
+  if(e.key === ' ') e.preventDefault();
+});
+window.addEventListener('keyup', e => keys[e.key] = false);
+
+function bindTouch(id, key){
+  const el = document.getElementById(id);
+  el.addEventListener('touchstart', e=>{e.preventDefault();keys[key]=true;});
+  el.addEventListener('touchend', e=>{e.preventDefault();keys[key]=false;});
+  el.addEventListener('mousedown', e=>{keys[key]=true;});
+  el.addEventListener('mouseup', e=>{keys[key]=false;});
+  el.addEventListener('mouseleave', e=>{keys[key]=false;});
+}
+bindTouch('leftBtn','ArrowLeft');
+bindTouch('rightBtn','ArrowRight');
+bindTouch('jumpBtn',' ');
+
+// ═══════════ GAME LOGIC ═══════════
+function rectsOverlap(a,b){
+  return a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
+}
+
+function update(){
+  if(!gameRunning || player.dead) return;
+
+  // Horizontal movement
+  if(keys['ArrowLeft'] || keys['a']){ player.vx = -MOVE_SPEED; player.facing = -1; }
+  else if(keys['ArrowRight'] || keys['d']){ player.vx = MOVE_SPEED; player.facing = 1; }
+  else { player.vx *= 0.8; }
+
+  // Jump
+  if((keys[' '] || keys['ArrowUp']) && player.onGround){
+    player.vy = JUMP_FORCE;
+    player.onGround = false;
+  }
+
+  player.vy += GRAVITY;
+  player.x += player.vx;
+  player.y += player.vy;
+
+  if(player.x < 0) player.x = 0;
+  if(player.x > level.width - player.w) player.x = level.width - player.w;
+
+  // Platform collision
+  player.onGround = false;
+  for(const p of level.platforms){
+    const pBox = {x:p.x,y:p.y,w:p.w,h:p.h};
+    const feet = {x:player.x+6,y:player.y+player.h-4,w:player.w-12,h:8};
+    if(rectsOverlap(feet, pBox) && player.vy >= 0 && player.y+player.h-player.vy <= p.y+8){
+      player.y = p.y - player.h;
+      player.vy = 0;
+      player.onGround = true;
+    }
+  }
+
+  // Fall off world = death
+  if(player.y > H + 100){
+    playerDie();
+    return;
+  }
+
+  // Obstacle collision
+  if(player.invincible > 0) player.invincible--;
+  for(const o of level.obstacles){
+    if(o.type === 'gap' || o.type === 'pit' || o.type === 'cloud_gap') continue; // these are handled by lack of platform
+    const oBox = {x:o.x,y:o.y,w:o.w,h:o.h};
+    const pBox = {x:player.x+4,y:player.y+4,w:player.w-8,h:player.h-8};
+    if(rectsOverlap(pBox, oBox) && player.invincible <= 0){
+      playerHit();
+    }
+  }
+
+  // Star collection
+  for(const s of level.stars){
+    if(s.collected) continue;
+    const sBox = {x:s.x-12,y:s.y-12,w:24,h:24};
+    const pBox = {x:player.x,y:player.y,w:player.w,h:player.h};
+    if(rectsOverlap(pBox, sBox)){
+      s.collected = true;
+      collectedStars++;
+      document.getElementById('starCount').innerText = collectedStars;
+    }
+  }
+
+  // Goal check
+  const goalBox = {x:level.goalX-20,y:level.goalY-40,w:40,h:80};
+  const pBox = {x:player.x,y:player.y,w:player.w,h:player.h};
+  if(rectsOverlap(pBox, goalBox)){
+    g1_levelComplete();
+  }
+
+  // Camera follow
+  cameraX = player.x - W/2.5;
+  if(cameraX < 0) cameraX = 0;
+  if(cameraX > level.width - W) cameraX = level.width - W;
+
+  // Animation
+  player.animTimer++;
+  if(player.animTimer > 8){
+    player.animFrame = (player.animFrame+1)%4;
+    player.animTimer = 0;
+  }
+}
+
+function playerHit(){
+  if(player.invincible > 0) return;
+  lives--;
+  document.getElementById('livesCount').innerText = lives;
+  player.invincible = 90;
+  player.vy = -8;
+  player.vx = player.facing * -3;
+  if(lives <= 0){
+    playerDie();
+  }
+}
+
+function playerDie(){
+  player.dead = true;
+  gameRunning = false;
+  setTimeout(()=>{
+    document.getElementById('loseScreen').style.display = 'flex';
+  }, 400);
+}
+
+function g1_retryLevel(){
+  document.getElementById('loseScreen').style.display = 'none';
+  lives = 3;
+  document.getElementById('livesCount').innerText = lives;
+  resetLevel(currentLevel);
+  gameRunning = true;
+}
+
+function g1_levelComplete(){
+  gameRunning = false;
+  document.getElementById('levelCompleteTitle').innerText =
+    currentLevel === LEVELS.length-1 ? '🎊 أكملت المغامرة بالكامل!' : 'أحسنت! وصلت للهدف 🎉';
+  document.getElementById('levelCompleteSub').innerText =
+    `جمعت ${collectedStars} من ${totalStars} نجوم في هذا المستوى`;
+  if(currentLevel === LEVELS.length-1){
+    setTimeout(()=>{
+      document.getElementById('winScreen').style.display = 'flex';
+    }, 300);
+  } else {
+    document.getElementById('levelCompleteScreen').style.display = 'flex';
+  }
+}
+
+function g1_nextLevel(){
+  document.getElementById('levelCompleteScreen').style.display = 'none';
+  currentLevel++;
+  resetLevel(currentLevel);
+  gameRunning = true;
+}
+
+function g1_startGame(){
+  document.getElementById('startScreen').style.display = 'none';
+  currentLevel = 0;
+  lives = 3;
+  document.getElementById('livesCount').innerText = lives;
+  resetLevel(0);
+  gameRunning = true;
+}
+
+function g1_restartGame(){
+  document.getElementById('winScreen').style.display = 'none';
+  g1_startGame();
+}
+
+// ═══════════ RENDERING ═══════════
+function drawBackground(){
+  const grad = ctx.createLinearGradient(0,0,0,H);
+  grad.addColorStop(0, level.bg[0]);
+  grad.addColorStop(1, level.bg[1]);
+  ctx.fillStyle = grad;
+  ctx.fillRect(0,0,W,H);
+
+  // Decorative background elements (parallax, slower than camera)
+  const parX = cameraX * 0.3;
+  ctx.globalAlpha = 0.5;
+  for(let i=0;i<8;i++){
+    const x = (i*350 - parX%350) * SCALE();
+    if(level.decorType === 'dome'){
+      ctx.fillStyle = level.decorColor;
+      ctx.beginPath();
+      ctx.arc(x, 280*SCALE(), 35*SCALE(), Math.PI, 0);
+      ctx.fill();
+      ctx.fillRect(x-8*SCALE(), 280*SCALE(), 16*SCALE(), 60*SCALE());
+    } else if(level.decorType === 'cactus'){
+      ctx.fillStyle = level.decorColor;
+      ctx.fillRect(x-6*SCALE(),300*SCALE(),12*SCALE(),60*SCALE());
+      ctx.fillRect(x-20*SCALE(),320*SCALE(),16*SCALE(),10*SCALE());
+    } else if(level.decorType === 'tree'){
+      ctx.fillStyle = level.decorColor;
+      ctx.beginPath();
+      ctx.arc(x, 260*SCALE(), 30*SCALE(), 0, Math.PI*2);
+      ctx.fill();
+      ctx.fillRect(x-5*SCALE(),280*SCALE(),10*SCALE(),60*SCALE());
+    } else if(level.decorType === 'peak'){
+      ctx.fillStyle = level.decorColor;
+      ctx.beginPath();
+      ctx.moveTo(x-40*SCALE(),330*SCALE());
+      ctx.lineTo(x,250*SCALE());
+      ctx.lineTo(x+40*SCALE(),330*SCALE());
+      ctx.fill();
+    } else if(level.decorType === 'crescent'){
+      ctx.fillStyle = 'rgba(255,255,255,0.7)';
+      ctx.beginPath();
+      ctx.ellipse(x, 100*SCALE(), 50*SCALE(), 22*SCALE(), 0, 0, Math.PI*2);
+      ctx.fill();
+    }
+  }
+  ctx.globalAlpha = 1;
+}
+
+function drawPlatform(p){
+  const x = (p.x - cameraX) * SCALE();
+  const y = p.y * SCALE();
+  const w = p.w * SCALE();
+  const h = p.h * SCALE();
+  ctx.fillStyle = level.platformColor;
+  ctx.fillRect(x, y, w, h);
+  ctx.fillStyle = level.groundColor;
+  ctx.fillRect(x, y, w, 6*SCALE());
+}
+
+function drawObstacle(o){
+  const x = (o.x - cameraX) * SCALE();
+  const y = o.y * SCALE();
+  const w = o.w * SCALE();
+  const h = o.h * SCALE();
+  if(o.type === 'gap' || o.type === 'pit' || o.type === 'cloud_gap') return;
+  ctx.save();
+  if(o.type === 'box'){
+    ctx.fillStyle = '#8B6914';
+    ctx.fillRect(x,y,w,h);
+    ctx.strokeStyle = '#5C4410';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(x,y,w,h);
+  } else if(o.type === 'rock' || o.type === 'boulder'){
+    ctx.fillStyle = '#7A6A5A';
+    ctx.beginPath();
+    ctx.ellipse(x+w/2,y+h/2,w/2,h/2,0,0,Math.PI*2);
+    ctx.fill();
+  } else if(o.type === 'branch'){
+    ctx.fillStyle = '#6B4423';
+    ctx.fillRect(x,y+h/2-4,w,8);
+  } else if(o.type === 'wind'){
+    ctx.strokeStyle = 'rgba(255,255,255,0.6)';
+    ctx.lineWidth = 3;
+    for(let i=0;i<3;i++){
+      ctx.beginPath();
+      ctx.moveTo(x, y+i*20);
+      ctx.quadraticCurveTo(x+w/2, y+i*20-10, x+w, y+i*20);
+      ctx.stroke();
+    }
+  }
+  ctx.restore();
+}
+
+function drawStar(s){
+  if(s.collected) return;
+  const x = (s.x - cameraX) * SCALE();
+  const y = s.y * SCALE();
+  const t = Date.now()/300;
+  const bob = Math.sin(t)*4*SCALE();
+  ctx.save();
+  ctx.translate(x, y+bob);
+  ctx.fillStyle = '#FFD700';
+  ctx.strokeStyle = '#B8860B';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  for(let i=0;i<5;i++){
+    const angle = (i*2*Math.PI/5) - Math.PI/2;
+    const outerX = Math.cos(angle)*12*SCALE();
+    const outerY = Math.sin(angle)*12*SCALE();
+    ctx.lineTo(outerX,outerY);
+    const innerAngle = angle + Math.PI/5;
+    const innerX = Math.cos(innerAngle)*5*SCALE();
+    const innerY = Math.sin(innerAngle)*5*SCALE();
+    ctx.lineTo(innerX,innerY);
+  }
+  ctx.closePath();
+  ctx.fill();
+  ctx.stroke();
+  ctx.restore();
+}
+
+function drawGoal(){
+  const x = (level.goalX - cameraX) * SCALE();
+  const y = level.goalY * SCALE();
+  ctx.fillStyle = '#8B6914';
+  ctx.fillRect(x-2*SCALE(), y-40*SCALE(), 4*SCALE(), 80*SCALE());
+  ctx.fillStyle = '#52B788';
+  ctx.beginPath();
+  ctx.moveTo(x+2*SCALE(), y-40*SCALE());
+  ctx.lineTo(x+30*SCALE(), y-30*SCALE());
+  ctx.lineTo(x+2*SCALE(), y-20*SCALE());
+  ctx.closePath();
+  ctx.fill();
+  // crescent on top
+  ctx.fillStyle = '#FFD700';
+  ctx.beginPath();
+  ctx.arc(x, y-44*SCALE(), 6*SCALE(), 0, Math.PI*2);
+  ctx.fill();
+}
+
+function drawPlayer(){
+  const x = (player.x - cameraX) * SCALE();
+  const y = player.y * SCALE();
+  const w = player.w * SCALE();
+  const h = player.h * SCALE();
+
+  if(player.invincible > 0 && Math.floor(player.invincible/5)%2===0) return; // blink effect
+
+  ctx.save();
+  ctx.translate(x+w/2, y);
+  if(player.facing < 0) ctx.scale(-1,1);
+
+  // Legs (simple walking animation)
+  const legOffset = player.onGround && Math.abs(player.vx)>0.5 ? Math.sin(player.animFrame*1.5)*4*SCALE() : 0;
+  ctx.fillStyle = '#FFFFFF';
+  ctx.fillRect(-w/2+4*SCALE(), h-12*SCALE()+legOffset, 8*SCALE(), 12*SCALE());
+  ctx.fillRect(w/2-12*SCALE(), h-12*SCALE()-legOffset, 8*SCALE(), 12*SCALE());
+
+  // Jalabiya (robe body)
+  ctx.fillStyle = '#F5F5F0';
+  ctx.beginPath();
+  ctx.moveTo(-w/2+2*SCALE(), h-10*SCALE());
+  ctx.lineTo(-w/2+6*SCALE(), 14*SCALE());
+  ctx.lineTo(w/2-6*SCALE(), 14*SCALE());
+  ctx.lineTo(w/2-2*SCALE(), h-10*SCALE());
+  ctx.closePath();
+  ctx.fill();
+  ctx.strokeStyle = '#D8D4C8';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  // Arms
+  ctx.fillStyle = '#F5F5F0';
+  ctx.fillRect(-w/2-3*SCALE(), 16*SCALE(), 6*SCALE(), 16*SCALE());
+  ctx.fillRect(w/2-3*SCALE(), 16*SCALE(), 6*SCALE(), 16*SCALE());
+
+  // Head
+  ctx.fillStyle = '#E8B894';
+  ctx.beginPath();
+  ctx.arc(0, 4*SCALE(), 11*SCALE(), 0, Math.PI*2);
+  ctx.fill();
+
+  // Qalansuwa (cap)
+  ctx.fillStyle = '#FFFFFF';
+  ctx.beginPath();
+  ctx.arc(0, -2*SCALE(), 10*SCALE(), Math.PI, 0);
+  ctx.fill();
+  ctx.fillRect(-10*SCALE(), -3*SCALE(), 20*SCALE(), 4*SCALE());
+
+  // Face
+  ctx.fillStyle = '#2A2A2A';
+  ctx.beginPath();
+  ctx.arc(4*SCALE(), 3*SCALE(), 1.5*SCALE(), 0, Math.PI*2);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(-2*SCALE(), 3*SCALE(), 1.5*SCALE(), 0, Math.PI*2);
+  ctx.fill();
+  // smile
+  ctx.strokeStyle = '#8B5A3C';
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.arc(1*SCALE(), 6*SCALE(), 3*SCALE(), 0.2, Math.PI-0.2);
+  ctx.stroke();
+
+  ctx.restore();
+}
+
+function gameLoop(){
+  update();
+  ctx.clearRect(0,0,W,H);
+  drawBackground();
+  for(const p of level.platforms) drawPlatform(p);
+  for(const o of level.obstacles) drawObstacle(o);
+  for(const s of level.stars) drawStar(s);
+  drawGoal();
+  drawPlayer();
+  requestAnimationFrame(gameLoop);
+}
+gameLoop();
+
+// Expose renamed functions globally
+window.g1_startGame = g1_startGame;
+window.g1_restartGame = g1_restartGame;
+window.g1_retryLevel = g1_retryLevel;
+window.g1_nextLevel = g1_nextLevel;
+})();</script>
+<script>;(function(){
+
+const SYMBOLS = ['⭐','🌙','💎','🔥','🌟','💚'];
+const SYMBOL_COLORS = {
+  '⭐':'#5B2D8E','🌙':'#1B4332','💎':'#0A3160','🔥':'#B45309','🌟':'#7B3FAE','💚':'#2D6A4F'
+};
+
+const LEVELS = [
+  {grid:6, moves:20, goal:{type:'⭐',count:8}, label:'اجمع ٨ من ⭐'},
+  {grid:6, moves:18, goal:{type:'🌙',count:10}, label:'اجمع ١٠ من 🌙'},
+  {grid:7, moves:18, goal:{type:'score',count:1500}, label:'اجمع ١٥٠٠ نقطة'},
+  {grid:7, moves:16, goal:{type:'💎',count:12}, label:'اجمع ١٢ من 💎'},
+  {grid:8, moves:15, goal:{type:'score',count:3000}, label:'اجمع ٣٠٠٠ نقطة'},
+];
+
+let currentLevel = 0;
+let gridSize = 6;
+let board = [];
+let score = 0;
+let movesLeft = 20;
+let goalProgress = {};
+let selected = null;
+let isAnimating = false;
+let cellSize = 48;
+
+const boardEl = document.getElementById('board');
+
+function randSymbol(){
+  return SYMBOLS[Math.floor(Math.random()*SYMBOLS.length)];
+}
+
+function initBoard(){
+  const lv = LEVELS[currentLevel];
+  gridSize = lv.grid;
+  movesLeft = lv.moves;
+  score = 0;
+  goalProgress = {};
+  isAnimating = false;
+  selected = null;
+
+  // Responsive cell size
+  const maxBoardWidth = Math.min(440, window.innerWidth - 40);
+  cellSize = Math.floor((maxBoardWidth - (gridSize+1)*4) / gridSize);
+  cellSize = Math.max(34, Math.min(54, cellSize));
+
+  board = [];
+  for(let r=0;r<gridSize;r++){
+    const row = [];
+    for(let c=0;c<gridSize;c++){
+      row.push(randSymbol());
+    }
+    board.push(row);
+  }
+  // Ensure no initial matches
+  let safety = 0;
+  while(findMatches().length > 0 && safety < 50){
+    for(const m of findMatches()){
+      board[m.r][m.c] = randSymbol();
+    }
+    safety++;
+  }
+
+  document.getElementById('levelDisplay').innerText = currentLevel+1;
+  document.getElementById('movesDisplay').innerText = movesLeft;
+  document.getElementById('scoreDisplay').innerText = score;
+  document.getElementById('goalDisplay').innerText = '🎯 ' + lv.label;
+  renderBoard();
+}
+
+function renderBoard(){
+  boardEl.style.gridTemplateColumns = `repeat(${gridSize}, ${cellSize}px)`;
+  boardEl.innerHTML = '';
+  for(let r=0;r<gridSize;r++){
+    for(let c=0;c<gridSize;c++){
+      const cell = document.createElement('div');
+      cell.className = 'cell';
+      cell.style.width = cellSize+'px';
+      cell.style.height = cellSize+'px';
+      cell.style.fontSize = Math.floor(cellSize*0.55)+'px';
+      cell.dataset.r = r;
+      cell.dataset.c = c;
+      const sym = board[r][c];
+      cell.innerText = sym || '';
+      cell.style.background = sym ? SYMBOL_COLORS[sym]+'33' : 'transparent';
+      cell.addEventListener('click', ()=>onCellClick(r,c));
+      boardEl.appendChild(cell);
+    }
+  }
+}
+
+function getCellEl(r,c){
+  return boardEl.children[r*gridSize+c];
+}
+
+function onCellClick(r,c){
+  if(isAnimating || movesLeft<=0) return;
+  if(!selected){
+    selected = {r,c};
+    getCellEl(r,c).classList.add('selected');
+    return;
+  }
+  if(selected.r===r && selected.c===c){
+    getCellEl(r,c).classList.remove('selected');
+    selected = null;
+    return;
+  }
+  const isAdjacent = (Math.abs(selected.r-r)+Math.abs(selected.c-c))===1;
+  getCellEl(selected.r,selected.c).classList.remove('selected');
+  if(isAdjacent){
+    trySwap(selected.r, selected.c, r, c);
+  }
+  selected = null;
+}
+
+function trySwap(r1,c1,r2,c2){
+  // swap
+  const tmp = board[r1][c1];
+  board[r1][c1] = board[r2][c2];
+  board[r2][c2] = tmp;
+
+  const matches = findMatches();
+  if(matches.length === 0){
+    // swap back, no valid move
+    board[r2][c2] = board[r1][c1];
+    board[r1][c1] = tmp;
+    return;
+  }
+
+  movesLeft--;
+  document.getElementById('movesDisplay').innerText = movesLeft;
+  renderBoard();
+  isAnimating = true;
+  setTimeout(()=>processMatches(true), 150);
+}
+
+function findMatches(){
+  const matches = [];
+  const matched = new Set();
+  // horizontal
+  for(let r=0;r<gridSize;r++){
+    let runStart = 0;
+    for(let c=1;c<=gridSize;c++){
+      if(c<gridSize && board[r][c] && board[r][c]===board[r][runStart]){
+        continue;
+      }
+      const runLen = c - runStart;
+      if(runLen >= 3){
+        for(let k=runStart;k<c;k++) matched.add(r+'_'+k);
+      }
+      runStart = c;
+    }
+  }
+  // vertical
+  for(let c=0;c<gridSize;c++){
+    let runStart = 0;
+    for(let r=1;r<=gridSize;r++){
+      if(r<gridSize && board[r][c] && board[r][c]===board[runStart][c]){
+        continue;
+      }
+      const runLen = r - runStart;
+      if(runLen >= 3){
+        for(let k=runStart;k<r;k++) matched.add(k+'_'+c);
+      }
+      runStart = r;
+    }
+  }
+  for(const key of matched){
+    const [r,c] = key.split('_').map(Number);
+    matches.push({r,c});
+  }
+  return matches;
+}
+
+function processMatches(isFirstChain, comboCount){
+  comboCount = comboCount || 1;
+  const matches = findMatches();
+  if(matches.length === 0){
+    isAnimating = false;
+    checkGoalAndMoves();
+    return;
+  }
+
+  // Track goal progress & score
+  const lv = LEVELS[currentLevel];
+  for(const m of matches){
+    const sym = board[m.r][m.c];
+    goalProgress[sym] = (goalProgress[sym]||0) + 1;
+    score += 10 * comboCount;
+    getCellEl(m.r,m.c).classList.add('matching');
+  }
+
+  // Show combo popup
+  if(comboCount > 1){
+    showCombo(comboCount);
+  }
+  showSparkles(matches);
+
+  document.getElementById('scoreDisplay').innerText = score;
+
+  setTimeout(()=>{
+    // Remove matched, drop down
+    for(const m of matches){
+      board[m.r][m.c] = null;
+    }
+    // gravity
+    for(let c=0;c<gridSize;c++){
+      let writeR = gridSize-1;
+      for(let r=gridSize-1;r>=0;r--){
+        if(board[r][c]){
+          board[writeR][c] = board[r][c];
+          if(writeR!==r) board[r][c]=null;
+          writeR--;
+        }
+      }
+      for(let r=writeR;r>=0;r--){
+        board[r][c] = randSymbol();
+      }
+    }
+    renderBoard();
+    setTimeout(()=>processMatches(false, comboCount+1), 200);
+  }, 350);
+}
+
+function showCombo(n){
+  const popup = document.createElement('div');
+  popup.className = 'comboPopup';
+  popup.innerText = 'كومبو x'+n+'! 🔥';
+  popup.style.left = (boardEl.offsetWidth/2 - 50) + 'px';
+  popup.style.top = '20px';
+  document.getElementById('boardWrap').style.position = 'relative';
+  document.getElementById('boardWrap').appendChild(popup);
+  setTimeout(()=>popup.remove(), 800);
+}
+
+function showSparkles(matches){
+  for(const m of matches.slice(0,6)){
+    const cellEl = getCellEl(m.r, m.c);
+    if(!cellEl) continue;
+    const rect = cellEl.getBoundingClientRect();
+    const boardRect = boardEl.getBoundingClientRect();
+    const sparkle = document.createElement('div');
+    sparkle.className = 'sparkle';
+    sparkle.innerText = '✨';
+    sparkle.style.left = (rect.left - boardRect.left) + 'px';
+    sparkle.style.top = (rect.top - boardRect.top) + 'px';
+    boardEl.style.position = 'relative';
+    boardEl.appendChild(sparkle);
+    setTimeout(()=>sparkle.remove(), 600);
+  }
+}
+
+function checkGoalAndMoves(){
+  const lv = LEVELS[currentLevel];
+  let goalMet = false;
+  if(lv.goal.type === 'score'){
+    goalMet = score >= lv.goal.count;
+  } else {
+    goalMet = (goalProgress[lv.goal.type]||0) >= lv.goal.count;
+  }
+
+  if(goalMet){
+    setTimeout(()=>g2_levelComplete(), 200);
+    return;
+  }
+
+  if(movesLeft <= 0){
+    setTimeout(()=>{
+      document.getElementById('loseScreen').style.display = 'flex';
+    }, 300);
+  }
+}
+
+function g2_levelComplete(){
+  const isLast = currentLevel === LEVELS.length-1;
+  if(isLast){
+    document.getElementById('finalScoreDisplay').innerText = 'نقاطك الإجمالية: ' + score;
+    document.getElementById('winScreen').style.display = 'flex';
+  } else {
+    document.getElementById('levelCompleteSub').innerText = `أكملت المستوى ${currentLevel+1} بنجاح! نقاطك: ${score}`;
+    document.getElementById('levelCompleteScreen').style.display = 'flex';
+  }
+}
+
+function g2_nextLevel(){
+  document.getElementById('levelCompleteScreen').style.display = 'none';
+  currentLevel++;
+  initBoard();
+}
+
+function g2_retryLevel(){
+  document.getElementById('loseScreen').style.display = 'none';
+  initBoard();
+}
+
+function g2_startGame(){
+  document.getElementById('startScreen').style.display = 'none';
+  currentLevel = 0;
+  initBoard();
+}
+
+function g2_restartGame(){
+  document.getElementById('winScreen').style.display = 'none';
+  g2_startGame();
+}
+
+// Expose renamed functions globally
+window.g2_startGame = g2_startGame;
+window.g2_restartGame = g2_restartGame;
+window.g2_retryLevel = g2_retryLevel;
+window.g2_nextLevel = g2_nextLevel;
+})();</script>
+<script>;(function(){
+
+const LEVELS = [
+  {size:4, target:128, label:'اصنع قطعة بقيمة ١٢٨'},
+  {size:4, target:256, label:'اصنع قطعة بقيمة ٢٥٦'},
+  {size:5, target:512, label:'اصنع قطعة بقيمة ٥١٢'},
+  {size:5, target:1024, label:'اصنع قطعة بقيمة ١٠٢٤'},
+  {size:5, target:2048, label:'اصنع قطعة بقيمة ٢٠٤٨ — التحدي الأكبر!'},
+];
+
+const TILE_COLORS = {
+  2:'#3D2817', 4:'#5C3A1E', 8:'#C9A84C', 16:'#D4954A',
+  32:'#E07B4F', 64:'#E85D4F', 128:'#7B3FAE', 256:'#5B2D8E',
+  512:'#1B4332', 1024:'#2D6A4F', 2048:'#FFD700'
+};
+const TILE_TEXT_COLOR = (v) => v >= 8 ? '#FFFFFF' : '#C9A84C';
+
+let currentLevel = 0;
+let size = 4;
+let grid = [];
+let score = 0;
+let best = parseInt(localStorage.getItem ? 0 : 0) || 0; // no localStorage per artifact rules; in-memory
+let isAnimating = false;
+let cellSize = 70;
+let gap = 8;
+
+const boardEl = document.getElementById('board');
+
+function emptyGrid(n){
+  const g = [];
+  for(let r=0;r<n;r++){ g.push(new Array(n).fill(0)); }
+  return g;
+}
+
+function getEmptyCells(){
+  const cells = [];
+  for(let r=0;r<size;r++) for(let c=0;c<size;c++) if(grid[r][c]===0) cells.push({r,c});
+  return cells;
+}
+
+function addRandomTile(isNew){
+  const empties = getEmptyCells();
+  if(empties.length===0) return null;
+  const cell = empties[Math.floor(Math.random()*empties.length)];
+  const value = Math.random()<0.85 ? 2 : 4;
+  grid[cell.r][cell.c] = value;
+  return {...cell, value, isNew};
+}
+
+function setupBoardSize(){
+  const lv = LEVELS[currentLevel];
+  size = lv.size;
+  const maxW = Math.min(420, window.innerWidth-40);
+  gap = 8;
+  cellSize = Math.floor((maxW - gap*(size+1))/size);
+  cellSize = Math.max(50, Math.min(80, cellSize));
+  const boardPx = cellSize*size + gap*(size+1);
+  boardEl.style.width = boardPx+'px';
+  boardEl.style.height = boardPx+'px';
+}
+
+function initLevel(){
+  const lv = LEVELS[currentLevel];
+  setupBoardSize();
+  grid = emptyGrid(size);
+  score = 0;
+  isAnimating = false;
+  document.getElementById('levelDisplay').innerText = currentLevel+1;
+  document.getElementById('scoreDisplay').innerText = 0;
+  document.getElementById('goalDisplay').innerText = '🎯 ' + lv.label;
+  addRandomTile(false);
+  addRandomTile(false);
+  renderBoard(true);
+}
+
+function renderBoard(skipAnim){
+  boardEl.innerHTML = '';
+  // background grid cells
+  for(let r=0;r<size;r++){
+    for(let c=0;c<size;c++){
+      const bg = document.createElement('div');
+      bg.className = 'gridBg';
+      bg.style.width = cellSize+'px';
+      bg.style.height = cellSize+'px';
+      bg.style.left = (gap + c*(cellSize+gap))+'px';
+      bg.style.top = (gap + r*(cellSize+gap))+'px';
+      boardEl.appendChild(bg);
+    }
+  }
+  for(let r=0;r<size;r++){
+    for(let c=0;c<size;c++){
+      const v = grid[r][c];
+      if(v===0) continue;
+      const tile = document.createElement('div');
+      tile.className = 'tile' + (skipAnim?'':' new');
+      tile.style.width = cellSize+'px';
+      tile.style.height = cellSize+'px';
+      tile.style.left = (gap + c*(cellSize+gap))+'px';
+      tile.style.top = (gap + r*(cellSize+gap))+'px';
+      tile.style.background = TILE_COLORS[v] || '#FFD700';
+      tile.style.color = TILE_TEXT_COLOR(v);
+      tile.style.fontSize = Math.floor(cellSize*(v>=1000?0.32:v>=100?0.38:0.45))+'px';
+      tile.innerText = v;
+      boardEl.appendChild(tile);
+    }
+  }
+}
+
+function cloneGrid(g){ return g.map(row=>row.slice()); }
+function gridsEqual(a,b){
+  for(let r=0;r<size;r++) for(let c=0;c<size;c++) if(a[r][c]!==b[r][c]) return false;
+  return true;
+}
+
+function slideRowLeft(row){
+  const vals = row.filter(v=>v!==0);
+  const merged = [];
+  let gained = 0;
+  for(let i=0;i<vals.length;i++){
+    if(i<vals.length-1 && vals[i]===vals[i+1]){
+      const newVal = vals[i]*2;
+      merged.push(newVal);
+      gained += newVal;
+      i++;
+    } else {
+      merged.push(vals[i]);
+    }
+  }
+  while(merged.length < row.length) merged.push(0);
+  return {row:merged, gained};
+}
+
+function move(direction){
+  if(isAnimating) return;
+  const before = cloneGrid(grid);
+  let totalGain = 0;
+
+  if(direction==='left'){
+    for(let r=0;r<size;r++){
+      const res = slideRowLeft(grid[r]);
+      grid[r] = res.row;
+      totalGain += res.gained;
+    }
+  } else if(direction==='right'){
+    for(let r=0;r<size;r++){
+      const reversed = grid[r].slice().reverse();
+      const res = slideRowLeft(reversed);
+      grid[r] = res.row.reverse();
+      totalGain += res.gained;
+    }
+  } else if(direction==='up'){
+    for(let c=0;c<size;c++){
+      const col = [];
+      for(let r=0;r<size;r++) col.push(grid[r][c]);
+      const res = slideRowLeft(col);
+      for(let r=0;r<size;r++) grid[r][c] = res.row[r];
+      totalGain += res.gained;
+    }
+  } else if(direction==='down'){
+    for(let c=0;c<size;c++){
+      const col = [];
+      for(let r=size-1;r>=0;r--) col.push(grid[r][c]);
+      const res = slideRowLeft(col);
+      let idx=0;
+      for(let r=size-1;r>=0;r--){ grid[r][c] = res.row[idx]; idx++; }
+      totalGain += res.gained;
+    }
+  }
+
+  if(gridsEqual(before, grid)) return; // no move happened
+
+  score += totalGain;
+  document.getElementById('scoreDisplay').innerText = score;
+
+  isAnimating = true;
+  renderBoard(false);
+
+  setTimeout(()=>{
+    addRandomTile(true);
+    renderBoard(false);
+    isAnimating = false;
+    checkGameState();
+  }, 130);
+}
+
+function checkGameState(){
+  const lv = LEVELS[currentLevel];
+  // check win (target reached)
+  let maxTile = 0;
+  for(let r=0;r<size;r++) for(let c=0;c<size;c++) maxTile = Math.max(maxTile, grid[r][c]);
+
+  if(maxTile >= lv.target){
+    setTimeout(()=>g3_levelComplete(), 200);
+    return;
+  }
+
+  // check if any moves possible
+  if(getEmptyCells().length === 0 && !anyMergesPossible()){
+    setTimeout(()=>{
+      document.getElementById('loseScreen').style.display = 'flex';
+    }, 200);
+  }
+}
+
+function anyMergesPossible(){
+  for(let r=0;r<size;r++){
+    for(let c=0;c<size;c++){
+      const v = grid[r][c];
+      if(c<size-1 && grid[r][c+1]===v) return true;
+      if(r<size-1 && grid[r+1][c]===v) return true;
+    }
+  }
+  return false;
+}
+
+function g3_levelComplete(){
+  const isLast = currentLevel === LEVELS.length-1;
+  if(isLast){
+    document.getElementById('winScreen').style.display = 'flex';
+  } else {
+    document.getElementById('levelCompleteSub').innerText = `وصلت للهدف في المستوى ${currentLevel+1}! نقاطك: ${score}`;
+    document.getElementById('levelCompleteScreen').style.display = 'flex';
+  }
+}
+
+function g3_nextLevel(){
+  document.getElementById('levelCompleteScreen').style.display = 'none';
+  currentLevel++;
+  initLevel();
+}
+
+function g3_retryLevel(){
+  document.getElementById('loseScreen').style.display = 'none';
+  initLevel();
+}
+
+function g3_startGame(){
+  document.getElementById('startScreen').style.display = 'none';
+  currentLevel = 0;
+  initLevel();
+}
+
+function g3_restartGame(){
+  document.getElementById('winScreen').style.display = 'none';
+  g3_startGame();
+}
+
+// ── INPUT: Keyboard ──
+window.addEventListener('keydown', e=>{
+  const map = {'ArrowLeft':'left','ArrowRight':'right','ArrowUp':'up','ArrowDown':'down'};
+  if(map[e.key]){
+    e.preventDefault();
+    move(map[e.key]);
+  }
+});
+
+// ── INPUT: Touch swipe ──
+let touchStartX=0, touchStartY=0;
+document.getElementById('boardWrap').addEventListener('touchstart', e=>{
+  touchStartX = e.touches[0].clientX;
+  touchStartY = e.touches[0].clientY;
+}, {passive:true});
+document.getElementById('boardWrap').addEventListener('touchend', e=>{
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  if(Math.abs(dx) < 20 && Math.abs(dy) < 20) return;
+  if(Math.abs(dx) > Math.abs(dy)){
+    move(dx>0 ? 'right' : 'left');
+  } else {
+    move(dy>0 ? 'down' : 'up');
+  }
+}, {passive:true});
+
+// Expose renamed functions globally
+window.g3_startGame = g3_startGame;
+window.g3_restartGame = g3_restartGame;
+window.g3_retryLevel = g3_retryLevel;
+window.g3_nextLevel = g3_nextLevel;
+})();</script>
+<script>;(function(){
+
+const ICONS = ['🌟','🌙','🕌','📖','🤝','💚','🌸','⭐','🍃','🎁','🦋','🐦','🌳','🔑','🏆','☀️'];
+
+const LEVELS = [
+  {pairs:6, cols:4, time:60, label:'طابق 6 أزواج'},
+  {pairs:8, cols:4, time:70, label:'طابق 8 أزواج'},
+  {pairs:10, cols:5, time:80, label:'طابق 10 أزواج'},
+  {pairs:12, cols:6, time:90, label:'طابق 12 زوجاً'},
+  {pairs:16, cols:6, time:100, label:'طابق 16 زوجاً — التحدي الأكبر!'},
+];
+
+let currentLevel = 0;
+let cards = [];
+let flipped = [];
+let matchedCount = 0;
+let moves = 0;
+let timeLeft = 60;
+let totalTime = 60;
+let timerInterval = null;
+let isChecking = false;
+
+const boardEl = document.getElementById('board');
+
+function shuffle(arr){
+  for(let i=arr.length-1;i>0;i--){
+    const j = Math.floor(Math.random()*(i+1));
+    [arr[i],arr[j]] = [arr[j],arr[i]];
+  }
+  return arr;
+}
+
+function initLevel(){
+  const lv = LEVELS[currentLevel];
+  const icons = ICONS.slice(0, lv.pairs);
+  cards = shuffle([...icons, ...icons].map((icon,i)=>({id:i, icon, matched:false})));
+  flipped = [];
+  matchedCount = 0;
+  moves = 0;
+  timeLeft = lv.time;
+  totalTime = lv.time;
+  isChecking = false;
+
+  document.getElementById('levelDisplay').innerText = currentLevel+1;
+  document.getElementById('movesDisplay').innerText = 0;
+  document.getElementById('timeDisplay').innerText = timeLeft;
+  document.getElementById('goalDisplay').innerText = '🎯 ' + lv.label;
+  document.getElementById('timerFill').style.width = '100%';
+
+  const maxBoardWidth = Math.min(440, window.innerWidth-40);
+  const cardSize = Math.floor((maxBoardWidth - (lv.cols+1)*6)/lv.cols);
+  boardEl.style.gridTemplateColumns = `repeat(${lv.cols}, ${cardSize}px)`;
+
+  renderBoard(cardSize);
+  startTimer();
+}
+
+function renderBoard(cardSize){
+  boardEl.innerHTML = '';
+  cards.forEach((card, idx) => {
+    const el = document.createElement('div');
+    el.className = 'card';
+    el.style.width = cardSize+'px';
+    el.style.height = cardSize+'px';
+    el.dataset.idx = idx;
+
+    const back = document.createElement('div');
+    back.className = 'cardFace cardBack';
+    back.style.fontSize = Math.floor(cardSize*0.4)+'px';
+    back.innerText = '☪';
+
+    const front = document.createElement('div');
+    front.className = 'cardFace cardFront';
+    front.style.fontSize = Math.floor(cardSize*0.45)+'px';
+    front.innerText = card.icon;
+
+    el.appendChild(back);
+    el.appendChild(front);
+    el.addEventListener('click', ()=>flipCard(idx));
+    boardEl.appendChild(el);
+  });
+}
+
+function flipCard(idx){
+  if(isChecking) return;
+  const card = cards[idx];
+  if(card.matched) return;
+  if(flipped.includes(idx)) return;
+  if(flipped.length>=2) return;
+
+  const el = boardEl.children[idx];
+  el.classList.add('flipped');
+  flipped.push(idx);
+
+  if(flipped.length===2){
+    moves++;
+    document.getElementById('movesDisplay').innerText = moves;
+    isChecking = true;
+    const [i1,i2] = flipped;
+    if(cards[i1].icon === cards[i2].icon){
+      cards[i1].matched = true;
+      cards[i2].matched = true;
+      matchedCount++;
+      setTimeout(()=>{
+        boardEl.children[i1].classList.add('matched');
+        boardEl.children[i2].classList.add('matched');
+        flipped = [];
+        isChecking = false;
+        checkWin();
+      }, 400);
+    } else {
+      setTimeout(()=>{
+        boardEl.children[i1].classList.remove('flipped');
+        boardEl.children[i2].classList.remove('flipped');
+        flipped = [];
+        isChecking = false;
+      }, 800);
+    }
+  }
+}
+
+function checkWin(){
+  const lv = LEVELS[currentLevel];
+  if(matchedCount >= lv.pairs){
+    clearInterval(timerInterval);
+    setTimeout(()=>g4_levelComplete(), 300);
+  }
+}
+
+function startTimer(){
+  clearInterval(timerInterval);
+  timerInterval = setInterval(()=>{
+    timeLeft--;
+    document.getElementById('timeDisplay').innerText = timeLeft;
+    document.getElementById('timerFill').style.width = (timeLeft/totalTime*100)+'%';
+    if(timeLeft<=0){
+      clearInterval(timerInterval);
+      document.getElementById('loseScreen').style.display = 'flex';
+    }
+  }, 1000);
+}
+
+function g4_levelComplete(){
+  const isLast = currentLevel === LEVELS.length-1;
+  if(isLast){
+    document.getElementById('winScreen').style.display = 'flex';
+  } else {
+    document.getElementById('levelCompleteSub').innerText = `أكملت المستوى ${currentLevel+1} في ${moves} محاولة!`;
+    document.getElementById('levelCompleteScreen').style.display = 'flex';
+  }
+}
+
+function g4_nextLevel(){
+  document.getElementById('levelCompleteScreen').style.display = 'none';
+  currentLevel++;
+  initLevel();
+}
+
+function g4_retryLevel(){
+  document.getElementById('loseScreen').style.display = 'none';
+  initLevel();
+}
+
+function g4_startGame(){
+  document.getElementById('startScreen').style.display = 'none';
+  currentLevel = 0;
+  initLevel();
+}
+
+function g4_restartGame(){
+  document.getElementById('winScreen').style.display = 'none';
+  g4_startGame();
+}
+
+// Expose renamed functions globally
+window.g4_startGame = g4_startGame;
+window.g4_restartGame = g4_restartGame;
+window.g4_retryLevel = g4_retryLevel;
+window.g4_nextLevel = g4_nextLevel;
+})();</script>
+
+<script>
+var _GU={1:false,2:false,3:false,4:false};
+function UG(d){_GU[d]=true;var b=document.getElementById('gb'+d);if(b){b.classList.add('unlocked');b.innerText='🎮 هديتك جاهزة! العب الآن 🎁';}}
+function OG(d){if(!_GU[d]){alert('أكمل جميع التحديات أولاً لفتح الهدية! 🌟');return;}document.getElementById('gov'+d).classList.add('active');document.body.classList.add('no-scroll');}
+function CG(d){document.getElementById('gov'+d).classList.remove('active');document.body.classList.remove('no-scroll');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')for(var i=1;i<=4;i++)CG(i);});
+// Patch TC
+(function(){
+  var orig=window.TC;
+  var dm={r1:1,r2:2,r3:3,r4:4};
+  window.TC=function(el,rid){
+    orig(el,rid);
+    var door=dm[rid];if(!door)return;
+    var all=el.closest('.card').querySelectorAll('.chi');
+    var done=el.closest('.card').querySelectorAll('.chi.ckd').length;
+    if(done>=all.length)UG(door);
+  };
+})();
+</script>
+
+</body>
+</html>
